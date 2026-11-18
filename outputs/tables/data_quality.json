@@ -1,0 +1,12 @@
+{
+  "encoding": "gbk",
+  "raw_rows": 3982,
+  "raw_start": "2010-06-01",
+  "raw_end": "2026-10-27",
+  "original_sorted": true,
+  "duplicate_dates": 0,
+  "missing_or_nonfinite": 0,
+  "clean_rows": 3980,
+  "excluded_after_end": 2,
+  "clean_end": "2026-10-23"
+}

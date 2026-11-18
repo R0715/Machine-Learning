@@ -1,0 +1,13 @@
+{
+  "stage": "第一阶段：数据、EDA、回测、传统基准；尚无正式模型",
+  "config": {
+    "cutoff": "2025-10-10",
+    "end": "2026-10-23",
+    "val_start": "2024-10-11",
+    "horizon": 1,
+    "initial_cash": 100000.0,
+    "short_window": 5,
+    "long_window": 20
+  },
+  "data_sha256": "c0d3b17d9f6d06f5eb4750533af4ea76d4aa752dadbec7809df9adebd71665c8"
+}

@@ -1,0 +1,9 @@
+# 临时工作目录及 Python 缓存
+work/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
