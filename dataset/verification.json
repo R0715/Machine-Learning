@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 12,
+  "exported_labels_independently_checked": 3958,
+  "feature_columns": 17,
+  "source_files_byte_identical": true,
+  "train_val_test_disjoint": true,
+  "all_input_rows_accounted_for": true,
+  "future_test_price_changes_do_not_affect_train_or_val": true,
+  "test_environment": "Python 3.11.15, numpy 2.4.6, pandas 3.0.5",
+  "scope": "原始特征对齐、未来收益标签、时间切分及导出；未拟合筛选器、缩放器或模型。"
+}

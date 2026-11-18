@@ -1,0 +1,96 @@
+{
+  "horizon_trading_days": 1,
+  "val_start": "2024-10-11",
+  "cutoff": "2025-10-10",
+  "end": "2026-10-23",
+  "input_rows": 3980,
+  "feature_nan_rows": 20,
+  "train_rows": 3465,
+  "val_rows": 242,
+  "test_signal_rows": 251,
+  "test_known_labels": 251,
+  "purged_train_boundary_rows": 1,
+  "purged_val_boundary_rows": 0,
+  "splits": [
+    {
+      "split": "train",
+      "rows": 3465,
+      "feature_columns": 17,
+      "signal_start": "2010-07-02",
+      "signal_end": "2024-10-09",
+      "target_start": "2010-07-05",
+      "target_end": "2024-10-10",
+      "known_labels": 3465
+    },
+    {
+      "split": "val",
+      "rows": 242,
+      "feature_columns": 17,
+      "signal_start": "2024-10-11",
+      "signal_end": "2025-10-09",
+      "target_start": "2024-10-14",
+      "target_end": "2025-10-10",
+      "known_labels": 242
+    },
+    {
+      "split": "test",
+      "rows": 251,
+      "feature_columns": 17,
+      "signal_start": "2025-10-10",
+      "signal_end": "2026-10-22",
+      "target_start": "2025-10-13",
+      "target_end": "2026-10-23",
+      "known_labels": 251
+    }
+  ],
+  "excluded_rows": 22,
+  "excluded_by_reason": {
+    "warmup_incomplete_features": 20,
+    "label_crosses_train_val_boundary": 1,
+    "end_date_no_next_execution": 1
+  },
+  "feature_order": [
+    "ret_1",
+    "ret_5",
+    "ret_20",
+    "close_vs_sma_20",
+    "rsi_sma_14",
+    "stochastic_k_14",
+    "ret_vol_5",
+    "ret_vol_20",
+    "true_range_pct_mean_14",
+    "volume_rel_20",
+    "amount_rel_20",
+    "signed_volume_share_10",
+    "gap_ret",
+    "intraday_ret",
+    "range_vs_open",
+    "upper_wick_share",
+    "lower_wick_share"
+  ],
+  "csv_matches_B_code": true,
+  "preprocessing": "raw_features_only_no_scaling_no_selection",
+  "test_label_policy": "仅供最终评估，禁止用于模型训练、选参、特征筛选和策略调参",
+  "target_formula": "close[t+H]/close[t]-1; H counts trading rows",
+  "return_warning": "标签为收盘到收盘收益，不等于按次日开盘成交的账户收益",
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5",
+  "config": {
+    "cutoff": "2025-10-10",
+    "end": "2026-10-23",
+    "val_start": "2024-10-11",
+    "horizon": 1,
+    "initial_cash": 100000.0,
+    "short_window": 5,
+    "long_window": 20,
+    "commission_rate": 0.0003,
+    "min_commission": 5.0,
+    "transfer_fee_rate": 1e-05,
+    "stamp_tax_rate": 0.0005
+  },
+  "source_sha256": {
+    "clean_prices.csv": "894531cd85d98f18d01b81a4beb85ddda2a10d0d854123bdb4b46151a23fafe7",
+    "raw_features.csv": "34e0ceb7b16f8d8d34744f6b866a85a7557d5b5b9bfe57e404e5842e74e17c8b"
+  }
+}

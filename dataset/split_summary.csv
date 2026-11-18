@@ -1,0 +1,4 @@
+﻿split,rows,feature_columns,signal_start,signal_end,target_start,target_end,known_labels
+train,3465,17,2010-07-02,2024-10-09,2010-07-05,2024-10-10,3465
+val,242,17,2024-10-11,2025-10-09,2024-10-14,2025-10-10,242
+test,251,17,2025-10-10,2026-10-22,2025-10-13,2026-10-23,251
