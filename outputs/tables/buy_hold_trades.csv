@@ -1,2 +1,2 @@
-﻿signal_date,trade_date,side,price,units,notional,target_weight,cash_after,units_after
-2025-10-10,2025-10-13,BUY,2975.03,33.61310642245624,100000.0,1.0,0.0,33.61310642245624
+﻿signal_date,trade_date,side,price,units,notional,commission,transfer_fee,stamp_tax,total_fees,target_weight,cash_after,units_after,actual_weight_after
+2025-10-10,2025-10-13,BUY,2975.03,33.602689588683745,99969.00960702181,29.990702882106543,0.9996900960702182,0.0,30.99039297817676,1.0,1.4551915228366852e-11,33.602689588683745,0.9999999999999999

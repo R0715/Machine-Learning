@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "fee_model": "commission .0003 minimum 5; transfer .00001; sell stamp .0005",
+  "unit_tests": 10,
+  "random_rebalance_cases": 1000,
+  "real_trades_independently_replayed": 23,
+  "daily_account_rows_checked": 504,
+  "raw_and_clean_prices_unchanged": true,
+  "scope": "使用Decimal独立复算税费，逐笔重放并核对每日现金、持仓、资产、累计费用与最大回撤",
+  "initial_cash": 100000,
+  "results": {
+    "buy_hold": {
+      "initial_cash": 100000.0,
+      "final_equity": 90192.97912498606,
+      "total_return": -0.0980702087501393,
+      "annual_return": -0.0984410326143138,
+      "max_drawdown": 0.4105887707885883,
+      "sharpe_rf0": -0.1237087427571608,
+      "calmar": -0.2397557839325347,
+      "trade_count": 1.0,
+      "return_periods": 251.0,
+      "total_fees": 30.99039297817676,
+      "total_commission": 29.990702882106543,
+      "total_transfer_fee": 0.9996900960702182,
+      "total_stamp_tax": 0.0,
+      "excess_return_vs_buy_hold": 0.0
+    },
+    "dual_ma": {
+      "initial_cash": 100000.0,
+      "final_equity": 90265.7777674832,
+      "total_return": -0.0973422223251679,
+      "annual_return": -0.0977104451710501,
+      "max_drawdown": 0.2334244751406531,
+      "sharpe_rf0": -0.3214659417860576,
+      "calmar": -0.4185955440712604,
+      "trade_count": 22.0,
+      "return_periods": 251.0,
+      "total_fees": 1237.5117475428815,
+      "total_commission": 664.0906741950672,
+      "total_transfer_fee": 22.13635580650224,
+      "total_stamp_tax": 551.2847175413124,
+      "excess_return_vs_buy_hold": 0.0007279864249714
+    }
+  }
+}

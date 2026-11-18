@@ -7,7 +7,13 @@
     "horizon": 1,
     "initial_cash": 100000.0,
     "short_window": 5,
-    "long_window": 20
+    "long_window": 20,
+    "commission_rate": 0.0003,
+    "min_commission": 5.0,
+    "transfer_fee_rate": 1e-05,
+    "stamp_tax_rate": 0.0005
   },
+  "fee_model": "双向佣金万3最低5元；双向过户费十万分之一；卖出印花税万5",
+  "execution": "收盘信号次日开盘成交，扣费后目标仓位，零滑点，可分割指数单位；期末按市值估值不强制卖出",
   "data_sha256": "c0d3b17d9f6d06f5eb4750533af4ea76d4aa752dadbec7809df9adebd71665c8"
 }

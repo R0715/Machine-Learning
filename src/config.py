@@ -11,4 +11,9 @@ class Config:
     initial_cash: float = 100_000.0
     short_window: int = 5
     long_window: int = 20
+    # 小组规定的股票模拟税费；不另叠加已包含在佣金中的规费。
+    commission_rate: float = 0.0003
+    min_commission: float = 5.0
+    transfer_fee_rate: float = 0.00001
+    stamp_tax_rate: float = 0.0005
 

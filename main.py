@@ -33,10 +33,13 @@ def main():
         export_result(name, result, output)
         print(f"{name}: 期末资产 {result.metrics['final_equity']:.2f}，"
               f"累计收益 {result.metrics['total_return']:.2%}，"
-              f"最大回撤 {result.metrics['max_drawdown']:.2%}")
+              f"最大回撤 {result.metrics['max_drawdown']:.2%}，"
+              f"累计税费 {result.metrics['total_fees']:.2f} 元")
     export_comparison(results, output)
     save_json({"stage": "第一阶段：数据、EDA、回测、传统基准；尚无正式模型",
                "config": asdict(config),
+               "fee_model": "双向佣金万3最低5元；双向过户费十万分之一；卖出印花税万5",
+               "execution": "收盘信号次日开盘成交，扣费后目标仓位，零滑点，可分割指数单位；期末按市值估值不强制卖出",
                "data_sha256": hashlib.sha256(source.read_bytes()).hexdigest()},
               output / "run_manifest.json")
     print(f"干净行情：{len(prices)} 行；结果位置：{output}")
