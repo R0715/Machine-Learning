@@ -1,0 +1,58 @@
+[
+  {
+    "task": "close",
+    "model": "ridge",
+    "split": "val",
+    "rows": 242,
+    "max_abs_prediction_error": 0.0
+  },
+  {
+    "task": "close",
+    "model": "ridge",
+    "split": "test",
+    "rows": 251,
+    "max_abs_prediction_error": 0.0
+  },
+  {
+    "task": "close",
+    "model": "lightgbm",
+    "split": "val",
+    "rows": 242,
+    "max_abs_prediction_error": 0.0
+  },
+  {
+    "task": "close",
+    "model": "lightgbm",
+    "split": "test",
+    "rows": 251,
+    "max_abs_prediction_error": 0.0
+  },
+  {
+    "task": "trade",
+    "model": "ridge",
+    "split": "val",
+    "rows": 241,
+    "max_abs_prediction_error": 8.673617379884035e-19
+  },
+  {
+    "task": "trade",
+    "model": "ridge",
+    "split": "test",
+    "rows": 251,
+    "max_abs_prediction_error": 4.336808689942018e-19
+  },
+  {
+    "task": "trade",
+    "model": "lightgbm",
+    "split": "val",
+    "rows": 241,
+    "max_abs_prediction_error": 0.0
+  },
+  {
+    "task": "trade",
+    "model": "lightgbm",
+    "split": "test",
+    "rows": 251,
+    "max_abs_prediction_error": 0.0
+  }
+]

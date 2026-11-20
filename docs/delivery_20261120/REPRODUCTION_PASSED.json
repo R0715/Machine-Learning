@@ -1,0 +1,8 @@
+{
+  "source_run": "20261119_233827_annualret_final_cd62b2",
+  "status": "passed",
+  "retrained": false,
+  "predictions_checked": "validation and test; single models and full ensembles",
+  "account_tolerance_yuan": 0.01,
+  "test_status": "historical development backtest, previously inspected"
+}

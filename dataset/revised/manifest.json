@@ -1,0 +1,39 @@
+{
+  "dataset_version": "H1_val20241011_cutoff20251010_end20261023_dual_v2",
+  "source_stage1_sha256": "67eba36f4c8f1aa3fbf12ed879d8cdbd1e6f1bb3befb8f28f7b21a29f97a2f87",
+  "source_stage2_sha256": "cf4d7b35eb24dfa5e078c656a6c56cfbfbcd18143b999dad60e635758c44aee8",
+  "libraries": {
+    "numpy": "2.3.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.6.0"
+  },
+  "files_sha256": {
+    "train/X_train.csv": "c88c55bd3d7d77e19a5497a883e377664e31fde1c11e6f39ed19f4bc6f1e0551",
+    "processed/train/X_train_ridge.csv": "1dccf1e78bf4c3a787e1f1349e5ca61a411b7847ff57b84a8b7dbefb9daaa687",
+    "processed/train/X_train_lightgbm.csv": "856b56d57f99b67640576c30dc293c2fcdc392041e2cb6c21e5376f6a524dfbb",
+    "val/X_val.csv": "fe1247620ae8cf30aaa82fe1a2e2892f675a72a7ada7b5aff01be4f8b2e0ae87",
+    "processed/val/X_val_ridge.csv": "676229b53a827e6e78b999e8318d1d8428a2edb6703e02226c4311be405e0819",
+    "processed/val/X_val_lightgbm.csv": "bdde2b12c7a5b77be1ff6a3e202936b61b2bdbdda7021ae4a991a813b234733a",
+    "test/X_test.csv": "9f725c635998704ddaadb7e753d6a48b855c12b2c481a776d4e71239d1bc35db",
+    "processed/test/X_test_ridge.csv": "58858635241ec0ede1ff891d05a9657e5029b40fd7ea6af67a5f38b78b11d501",
+    "processed/test/X_test_lightgbm.csv": "2b55279245a5087b6338487d2d63c167048fcaf05253a8a7ce10c0d1bb194d08",
+    "train/y_train.csv": "c497a2affb9fca11ba1af6dbdf421aef6e33724ac5315557b51ff29422238f3f",
+    "train/y_trade.csv": "b03450ca1bc88bf526cb6ed1c4a61d8a85e31b989490f0295b66f82f2e4d1b83",
+    "val/y_val.csv": "ab06b9f51252d165cbec7102850ad607299f0020177989e8fa2003279bbba5ea",
+    "val/y_trade.csv": "9257237f567118a77c446655ba00f2d4a9526fd74e5eb32841b0ea2985987777",
+    "test/target_dates.csv": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c",
+    "history/features_history.csv": "e4954234806c160ae7b15089e1cbc0d6b4b80a24706efece87d3ad1c8ce31420",
+    "train/recency_weights.csv": "dbf3effa005eab007847fbf29b3412781f5cfedd6ca5f6209d7b70bbdb38c57d",
+    "audit/feature_correlation.csv": "ad8b66e6fa7d0a41dbb947080d3821e9db1ed3b4678c2d90f79558af4c0d0847",
+    "audit/vif.csv": "a618a64e655f8c032173be93701285f9a14232950f3dced392365fed797f246a",
+    "audit/train_val_drift.csv": "4bb0ad87197cb490599f88c2e9e4cdf10d746c33eefe9e96f82f687888f58511",
+    "audit/validation_comparison.csv": "7ea95014023114e8d5a1e67d263948c1e2547e450cae0da652b106cb4ac71814",
+    "split_summary.csv": "edc17d9e40fb6dc638154d048b1a732a5732a8d92c0eff8ba67aed2d0129303c",
+    "audit/split_summary_dual.csv": "ccedc0a0a325db5c7937da678cfc3dbf8be63aab12891cc42a2d05b7edae77d2",
+    "preprocessing.json": "00e88089ea82ab890234b36b48043e98c370e5b603d82d93a936edb9142e8984",
+    "README.md": "b856a8f975d04e51d48ec921c18333cd5177c0dbb07c4bea8a10dfdfea5a6d77",
+    "src/features.py": "78a4a074d229603d8e3242120e42b23a456c32e5e1552e3bd3ceb1ef06def211",
+    "src/modeling_data.py": "e292a6efb592d2622cbf0da51a7e85b3944ee7af6cd445a65712528f47ca1456"
+  }
+}

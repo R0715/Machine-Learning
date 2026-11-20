@@ -1,0 +1,110 @@
+{
+  "ridge": {
+    "model": "ridge",
+    "kind": "single",
+    "candidate": "alpha_7500",
+    "source_kind": "r2_refine",
+    "folder": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_7500",
+    "checkpoints": [
+      {
+        "folder": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_7500",
+        "file": "model.joblib"
+      }
+    ],
+    "val_annual_return": 0.5229713742675264,
+    "val_total_return": 0.49775944919320025,
+    "val_sharpe": 2.7197058383951,
+    "val_max_drawdown": 0.06092606811731949,
+    "first_half_return": 0.04271910018408942,
+    "second_half_return": 0.3873967853028424,
+    "rmse": 0.020218430005097838,
+    "direction_accuracy": 0.4854771784232365,
+    "seconds": 0.06045302999996238,
+    "robust_filter_passed": true,
+    "r1_winner_annual": 0.5095679202864796,
+    "r2_winner": "alpha_7500"
+  },
+  "lightgbm": {
+    "model": "lightgbm",
+    "kind": "single",
+    "candidate": "minchild40_col07",
+    "source_kind": "r2_refine",
+    "folder": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07",
+    "checkpoints": [
+      {
+        "folder": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07",
+        "file": "model.txt"
+      }
+    ],
+    "val_annual_return": 0.6405647515956303,
+    "val_total_return": 0.6086512215274631,
+    "val_sharpe": 2.679045700060909,
+    "val_max_drawdown": 0.08527743831298484,
+    "first_half_return": 0.13326599361469804,
+    "second_half_return": 0.4194824785983935,
+    "rmse": 0.01950972057756276,
+    "direction_accuracy": 0.5477178423236515,
+    "seconds": 0.11996648900003493,
+    "robust_filter_passed": true,
+    "r1_winner_annual": 0.6368320616371093,
+    "r2_winner": "minchild40_col07"
+  },
+  "tqnet": {
+    "model": "tqnet",
+    "kind": "single",
+    "candidate": "lr5e4",
+    "source_kind": "r1_winner",
+    "folder": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr5e4",
+    "checkpoints": [
+      {
+        "folder": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr5e4",
+        "file": "model.pt"
+      }
+    ],
+    "val_annual_return": 0.8809301635204605,
+    "val_total_return": 0.8343612461953012,
+    "val_sharpe": 3.290273041969886,
+    "val_max_drawdown": 0.0609260681173196,
+    "first_half_return": 0.1186602524390358,
+    "second_half_return": 0.5861195880108088,
+    "rmse": 0.0201206595856754,
+    "direction_accuracy": 0.5809128630705395,
+    "seconds": 8.699638585000002,
+    "robust_filter_passed": true,
+    "r1_winner_annual": 0.8809301635204605,
+    "r2_winner": "lr7e4"
+  },
+  "patchtst": {
+    "model": "patchtst",
+    "kind": "r1_ensemble",
+    "candidate": "ens_top3",
+    "source_kind": "r1_ensemble",
+    "folder": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/ens_top3",
+    "checkpoints": [
+      {
+        "folder": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr5e4",
+        "file": "model.pt"
+      },
+      {
+        "folder": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr1e4",
+        "file": "model.pt"
+      },
+      {
+        "folder": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref64",
+        "file": "model.pt"
+      }
+    ],
+    "val_annual_return": 0.8727880082316455,
+    "val_total_return": 0.8267351240432448,
+    "val_sharpe": 3.177086455203792,
+    "val_max_drawdown": 0.060926068117319376,
+    "first_half_return": 0.2251780926311493,
+    "second_half_return": 0.44997856113769985,
+    "rmse": 0.02030291220998998,
+    "direction_accuracy": 0.5684647302904564,
+    "seconds": null,
+    "robust_filter_passed": true,
+    "r1_winner_annual": 0.8225401757736659,
+    "r2_winner": "64_lr7e4"
+  }
+}

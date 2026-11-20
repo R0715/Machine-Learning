@@ -1,0 +1,3292 @@
+{
+  "date": "2026-11-20",
+  "operation": "Organize supplied archives and supplement missing local dependencies; no retraining",
+  "source_archives": [
+    {
+      "name": "第二轮最终交付_20261120.zip",
+      "sha256": "6914c81192d5bb44a0d7303d4df243725f30ec097d505e77711f4bfb7dde1a82",
+      "bytes": 11040923
+    },
+    {
+      "name": "第二阶段_统一建模数据_修订版.zip",
+      "sha256": "bf1eaa61ec56b1c7a8a7a9747610ed639f938178ada2cd769dc23f8b46b26275",
+      "bytes": 2675132
+    }
+  ],
+  "final_run": "runs/20261119_233827_annualret_final_cd62b2",
+  "training_source_run": "runs/20261119_165036_ed592b",
+  "files": [
+    {
+      "path": "src/contract_output.py",
+      "origin": "local_base_project",
+      "sha256": "31696e63ad22ec6043e01c0aa6293c7604b0e04fcf6ccda6cc9803c4ec275633"
+    },
+    {
+      "path": "src/cycle_selection.py",
+      "origin": "local_base_project",
+      "sha256": "aec9141059793553bd4aedf9b9059025b40e671c5701e8c3997728dca6c48ffb"
+    },
+    {
+      "path": "src/data.py",
+      "origin": "local_base_project",
+      "sha256": "93404718912055e8718e9055cf78f8eb9d34e0b523254673ddaa1aa468a57517"
+    },
+    {
+      "path": "src/patchtst_adapter.py",
+      "origin": "local_base_project",
+      "sha256": "247afae8b7d9b7d32006aba068d8bddec8986a2d052a6fced76ac99454ca165f"
+    },
+    {
+      "path": "src/short_models.py",
+      "origin": "local_base_project",
+      "sha256": "380cbf0aa1c9f17b27948acd73f73e01ee5f1bc0164d8a97b02eb189ff3cd903"
+    },
+    {
+      "path": "src/simple_evaluation.py",
+      "origin": "local_base_project",
+      "sha256": "3b1b4a67dbea474a218371303de450024ac4d57270b609493cd00bc41e300ff3"
+    },
+    {
+      "path": "src/strategy.py",
+      "origin": "local_base_project",
+      "sha256": "bb4daab0517e335c2b9aeb4671ab3abdbbc84be25e94df27ff8123409020e41d"
+    },
+    {
+      "path": "src/tqnet_adapter.py",
+      "origin": "local_base_project",
+      "sha256": "1a8b58a96929c8727eabf912c3033fb81c4865fef814803d4ba05f184c182f21"
+    },
+    {
+      "path": "src/training.py",
+      "origin": "local_base_project",
+      "sha256": "82327ed498a1381fd9c8f72f702cc34703caefe3ed7f7476893129e221087a9d"
+    },
+    {
+      "path": "src/tuned_models.py",
+      "origin": "local_base_project",
+      "sha256": "620fc733f65389e547310cebdb503577a7ce6cea770f3a52885af5f6731faedb"
+    },
+    {
+      "path": "src/tuning_data.py",
+      "origin": "local_base_project",
+      "sha256": "7898aad6653964803738fc0f934010efc741683ad5926c0100040235d90cc9e9"
+    },
+    {
+      "path": "src/weighted_backtest.py",
+      "origin": "local_base_project",
+      "sha256": "8d7b96853546e7886c94035e392c93b5d9c362ad761631694d8d218fb4ba1504"
+    },
+    {
+      "path": "vendor/patchtst/layers/PatchTST_backbone.py",
+      "origin": "local_base_project",
+      "sha256": "fe3820d9bd6d9f7f591aa1421ec47ac27aa90378e456f91c32c74e036635c2ee"
+    },
+    {
+      "path": "vendor/patchtst/layers/PatchTST_layers.py",
+      "origin": "local_base_project",
+      "sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6"
+    },
+    {
+      "path": "vendor/patchtst/layers/RevIN.py",
+      "origin": "local_base_project",
+      "sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6"
+    },
+    {
+      "path": "vendor/patchtst/LICENSE",
+      "origin": "local_base_project",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/patchtst/models/PatchTST.py",
+      "origin": "local_base_project",
+      "sha256": "f40d1591297e2ade426f475d5342a6db2e74b592adb5222b6d8cfdad1cd05fb6"
+    },
+    {
+      "path": "vendor/patchtst/UPSTREAM.md",
+      "origin": "local_base_project",
+      "sha256": "63b57053006ee1829848784eaa48e07c39ab692ae85987194cbf300fe9461a41"
+    },
+    {
+      "path": "vendor/reference/lightgbm/LICENSE",
+      "origin": "local_base_project",
+      "sha256": "b5cb7ff7859e7d282d98fc43ab081b0dda5dc659dc3385cf65740c759a7e6a6c"
+    },
+    {
+      "path": "vendor/reference/lightgbm/sklearn.py",
+      "origin": "local_base_project",
+      "sha256": "9a7dc662c18746b943423ca63768597930e02ed91eeba8a63ef35f16270d6e9f"
+    },
+    {
+      "path": "vendor/reference/ridge/_ridge.py",
+      "origin": "local_base_project",
+      "sha256": "49cd5b5818f983d177ba0893428aaea9274ba720f017db3c43c99886b53f9dbb"
+    },
+    {
+      "path": "vendor/reference/ridge/COPYING",
+      "origin": "local_base_project",
+      "sha256": "75684d16f4662ab842ed5af9482ac01939aee83c8243d89993616d959d3053f8"
+    },
+    {
+      "path": "vendor/reference/SOURCE.md",
+      "origin": "local_base_project",
+      "sha256": "c4363e5e2fa6f966bde6a993d538586619113228a646024365f931a955b29735"
+    },
+    {
+      "path": "vendor/tqnet/LICENSE",
+      "origin": "local_base_project",
+      "sha256": "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+    },
+    {
+      "path": "vendor/tqnet/SOURCE.md",
+      "origin": "local_base_project",
+      "sha256": "2ed6ce526f9ef580e8c97ac608d1860972e760897e104c1f58441b3d1c9a30a3"
+    },
+    {
+      "path": "vendor/tqnet/TQNet.py",
+      "origin": "local_base_project",
+      "sha256": "c31e4498104d241a69335d22522f01a28cae90d58d73f4ec4c10929fb53b7727"
+    },
+    {
+      "path": "config/strategy_frozen.json",
+      "origin": "local_base_project",
+      "sha256": "e75c757284877ab0a52a4a6e6147915a515f7fed43cd75f863fc4337dab7ca23"
+    },
+    {
+      "path": "run_baselines.py",
+      "origin": "local_base_project",
+      "sha256": "a0b9bc1442484285dc510549b588c8135f6e9c6aecf5aa19a1855f3bfcda8b28"
+    },
+    {
+      "path": "tune_trade_models.py",
+      "origin": "local_base_project",
+      "sha256": "db1120857620d519beb1e7fdc7af74e2222010675780b4ca274e1d5d1c4c77a1"
+    },
+    {
+      "path": "backtest_baselines.py",
+      "origin": "local_base_project",
+      "sha256": "e88324c6b8e96eeffe8760f6ef7936aa97746fade6c54424581088d82568629e"
+    },
+    {
+      "path": "backtest_research.py",
+      "origin": "local_base_project",
+      "sha256": "4998f2a017a442f5e6f7ca0cce477dd59fd58022f3d6cf343224f4215a3c8f7e"
+    },
+    {
+      "path": "evaluate_test.py",
+      "origin": "local_base_project",
+      "sha256": "fb4ad911baa4778d447fb57f6ec9f813cab88458294a623fd4df8f7e998cffef"
+    },
+    {
+      "path": "export_predictions.py",
+      "origin": "local_base_project",
+      "sha256": "b7a3d9a3e39b63dcf9161a441644681b26f8e7ac15b3ca060aa523456478499e",
+      "organized_sha256": "1634292d3f2913ed24055d445c3ac02d7523cb6847ab7660ecbc16c6f927c62e",
+      "adaptation": "Explicit model file and 128-day restoration; infer entry recognizes all local ensemble members; CPU/CUDA comparison tolerance rtol=1e-5 atol=1e-8."
+    },
+    {
+      "path": "run_5060.ps1",
+      "origin": "local_base_project",
+      "sha256": "a9ce0a07364032fb0a48aeb82eca76d3d82b3c1ad1a4f3df6ff7e40910a17c51"
+    },
+    {
+      "path": "export_run.ps1",
+      "origin": "local_base_project",
+      "sha256": "f6ba90953fafd00012c658d6d4a02c064c592f0031d02e26dbd1d88bc70c8b09"
+    },
+    {
+      "path": "assemble_final.py",
+      "origin": "training_zip/code",
+      "sha256": "0863f9dad7b854e1d20bc9243f64f05c12dd628630a95f02bda566356f518b77"
+    },
+    {
+      "path": "diagnose_r3.py",
+      "origin": "training_zip/code",
+      "sha256": "2ac30049dca3faf94e4214dde89efa562e5acb6a2423796c0ff51723d3f7a2f3"
+    },
+    {
+      "path": "src/mid_models.py",
+      "origin": "training_zip/code",
+      "sha256": "a44063c7914f42bcc710b9772e54cc2bc9f6dc8aae80bad41599629d51e5f2e7"
+    },
+    {
+      "path": "tune_annual_return.py",
+      "origin": "training_zip/code",
+      "sha256": "a7cb787e26116d3b7455ccbd59e39e6b31bd61ae5ca4229a4521d313729858c0"
+    },
+    {
+      "path": "tune_annual_return_r2.py",
+      "origin": "training_zip/code",
+      "sha256": "551c8a4976d2ffeb08e08676a1c685964644fb300a6411fed4777d8ec962b046"
+    },
+    {
+      "path": "tune_annual_return_r3.py",
+      "origin": "training_zip/code",
+      "sha256": "710932b2fbe19cb134670c43e2405b6be80b7ce49c07d0d6fad03f16d94ee23e"
+    },
+    {
+      "path": "verify_annualret.py",
+      "origin": "training_zip/code",
+      "sha256": "4a050920458dabab4ce0bfa157b5cc8e4e3b7dcefbacea094f1bba7a4d259504"
+    },
+    {
+      "path": "verify_annualret_r2.py",
+      "origin": "training_zip/code",
+      "sha256": "53e8519fce56fed991f90281742fba0fb7a8554a37e5f7724de7dc76686d99c0"
+    },
+    {
+      "path": "verify_annualret_r3.py",
+      "origin": "training_zip/code",
+      "sha256": "0b146b776d0382bbb831f9a1602a4f578cfd7f40806284a961dad6dd47f20660"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/close/lightgbm/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "361b07187d16a7fe08e56950ba0246667eb522137799c5de4551b827a29a3087"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/close/lightgbm/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a24e4854f8165f3e697f6f7e64440ce65cf04eed7016c07ff9bf933b79fcbdc1"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/close/lightgbm/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "85955b655b4d4bfe022005a4776709c577c154b1f1beaa6ca8dbe7fa9cdcfe67"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/close/ridge/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "83fdc860d2566c7d5399505a1a4dc006c2e37bc6a979a09419f0696bbaf2b6a6"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/close/ridge/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4e7cd94cfd9d2b390e3c235ce996860855818ec7f9b4eb3f2f569ae1ccd91650"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/close/ridge/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "dcb82ffa7f8b8c9bd7598c9ae148436a5b1bfaf38b35955b3805dafee8ea31ae"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/run_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "5b7e1bd35be25136e54be16b2c5036a1aef53d819a4d5bed8aab579b81d7aaff"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/test_target_dates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/trade/lightgbm/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "3845fae0f36ff5f3dc7e479a3446d5281c132f8c759ce0585404bd8f7034aa10"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/trade/lightgbm/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "eb899a83fa18037cfb3d47b540c5e8e0847cee57776886818159f19bcdc384c1"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/trade/lightgbm/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "20379d06f36760c0d837d2231bad4990f521718d1675390fe949e722e89d0d40"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/trade/ridge/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "1fb841edb16854f8796b4f904ba113f322126584adc99e21037b8c5d0cfdc74a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/trade/ridge/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "175c32dfcb84c2996c6271058125b180034174aa4c0ee46640cd4372c8f908d3"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/trade/ridge/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2f8c0b1964d44657e87024287a1171074dc8ec87929b2f66d2434a4fbea551c5"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/cpu/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2e5816fe157b4eda10500a43e93e4ec6740f35ad7668a608d34eb07c781330cc"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/acf/acf.png",
+      "origin": "training_zip/runs",
+      "sha256": "58c6b0c73ba1a0711bc2248440c088ce5f5759f3266eed0bb4083357b408ec9a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/acf/acf_values.csv",
+      "origin": "training_zip/runs",
+      "sha256": "04592fc10ac1aead43a82cbf350db8574b27b795fa70c77c854e4880fcf3164b"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/acf/cycle_candidates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "67f99886a18eff35db342f91e454fd113f410e0086fb563551ebbceb24c0fe0a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/acf/cycle_selection.json",
+      "origin": "training_zip/runs",
+      "sha256": "128548788934c60e0846587d69b0270113e7dab685b89271d374feb2b223df10"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/patchtst/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "1856dd384b8982e712c3d20c14b9610a3b7cb35564ae281edf1535baa811513b"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/patchtst/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f397cac9b2f6b1ba35c97b435fd05e998b6efeea35f8344dc169e425da4f6d04"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/patchtst/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2abf573b14c0c3a82cc72fa28a8eca9f8066ebbbb7c45c7b76006ebeb435c06b"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/patchtst/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "75d05d5076e528a82c308a2d62ae243812a907820d7dc6916ebbcae8b6ce5371"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/tqnet/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "1692aa9c580d64c48585ec94f9cf3f432e3c6c38538bf8a309143a4d47ca7f25"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/tqnet/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8408ae3710fcaea0b9c876d2fee50e2db76753517c978647c1976e2eed6aab92"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/tqnet/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "01c5647941d9288584d31b9f58f353734d62c2c06bcc04e81902a906e344b8a6"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/close/tqnet/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "29484537a6d70ec76ea599eb945a9da425f7911617e4b2f37ccab94759f00737"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/run_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "16db7eb92cbc1ce68daef3c8f0156630a231f5af68f97e0a277f5fb93e22ca10"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/test_target_dates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/patchtst/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "a2413f2bb7cf4fdb17156efe6f97aeceac13eb4b78123795722c03ff1f601d57"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/patchtst/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "50d5b6a5ae10810f3e5fc38ca211df24bdfa40d23d2b2793c2b5a4d17cf5bc55"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/patchtst/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0df262f14a577f1f858cfa86b18f889448dfe9de4431c31dc76e459476eeb5db"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/patchtst/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "99bde2785751b7927158028e43ad6d01fb7bed0117c4ad2699a5065261cc7ebc"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/tqnet/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "77bdbf3569f4081b346e8c41e6d485794fc77267f53b544492fd4f168cb948c0"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/tqnet/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "14796ef3b2bd3b54343c944f216a1928436add9eedb5d586f02e05e10c101213"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/tqnet/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "93026cf451f0df8464d3812f4a4bd2183084be49fec2f7a7aa0bfb1266da0db1"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/trade/tqnet/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "98005256409859ee710721d7c94bae1898b9d746c1c0da95e4c463d65cde5e73"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/gpu/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "33f8fad49aefc7ad8478034ea4b41b743b21732dd16113b88b843f205724ecba"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/handoff/lightgbm_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "22c40c0a364a3ad221a4e380093e847767480fd6e20927c74789641eaad67436"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/handoff/manifest.json",
+      "origin": "training_zip/runs",
+      "sha256": "cdc0282c7c3a6e8fd7aa3ba00efabff17c39131f0d2ad9cf7871c34d6dfe18ef"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/handoff/patchtst_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "674160bef01341ba8c918b55ea7b6c253da601d54926fa66be1fe047ca4e67ab"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/handoff/ridge_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ccd5da69f8b0f2eb43e456a6d3b857fb0ec65428b88e167e1fb0bdba25804443"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/handoff/tqnet_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "3855196d2c5c174367a54a8110fd326e4f3d8fc135ccc4b3d0416c7ca509c30c"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/handoff/交付说明.md",
+      "origin": "training_zip/runs",
+      "sha256": "3511264fb36352b1c5232b993718faf39a9ec7c44016ad015c58a635c36e0c89"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/lightgbm_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "fed05dc4e6ead6f6efb7d49b93651c4a12bf5d3991be133b1460ede315fee510"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/lightgbm_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "af3f7a6b5d3df5df7747246813f058039854da21cf64be7d107759de22740cf3"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/lightgbm_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4620bef271d3b7c779b5f695f3aba2ca8e21c0e025e04c87ee3b3a0230c4e80a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/patchtst_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c203409d4f6a71b0e5dbb319a805c244e77ca1f107d630ed65123e14651375a3"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/patchtst_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "41d29e1ac00a5892d230bc1a4b8e61e3100d4a2bed568113d685fd91177ee3ee"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/patchtst_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "1c1d7eefa274df4319f42a5ef6ab1c5b4d22b91ce24870bfe9b60ccc06532d19"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/ridge_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0e8d345f82a30746d4530f47d6d8ae1e84d09a2ff0f158180c68d272578d2c28"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/ridge_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7d10e28df4ec1e03118ab4c66b3b5a847b6eb04f65a53de72831c709a22c7b66"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/ridge_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4612b4f58ed3dedf9b92b42092dbd652bf4c369a597206bbcb2caad14c45ece8"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/selected_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "b1c7929c41637ebf45f2633b3791bba66f871ae1e6f9c1bbdaf27e5f06516e39"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/strategy_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "66fbd66b81f1c4a77a4c846c7c68cc9d6979d53ce40be6476b9a0c468bb87dab"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/tqnet_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "573b95f6d2a21f9f8b01db1734a9cc9184de568509fbc577e6ab55b31bc80a62"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/tqnet_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2c4d5d120be75339c22ce4c2cf2b73768117bb7a74ac227bd6d642e916c4791f"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/research_strategy_backtest/tqnet_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e4a1749bf7397bb9d4d4ed19734143a44205b696585c7445aaa485e5408753d9"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/colsample07/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "0947f2589e7203bce2c4655705457e5eee84b6f4679b9092cbca969c42cfe5df"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/colsample07/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8dd14d562c8414df1795bb94c644da9d94b4a57501c843152f6a0fc25b7cd490"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/colsample10/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "0f04c0766629ee429c204f552fc88146701bbe56b49631728f9677dbcd777bd0"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/colsample10/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "cd8e4d56a9c6d94231b81f134dc5eb8225504eb598debe5627d1905b25f25c3a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lambda0/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "d6a75e7f27d7d14c2a619e2897b877d6b4d6bc742aa2c822de1f022d72435401"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lambda0/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "74c6a3588a08e551ce874e78a42620f62f05a0b90430dc3395bbbdd91a47124e"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lambda5/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "77b49d7a133032205533bc7f5d8cf572d0405004b9ee65f737a0ac596b46a4f1"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lambda5/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ee297a0715d46fd649bafa74e53ac7b9d0d95ec9d1b09d53896f7c4931d225c6"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves15/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "d79cb46b9185f290028d2966abbca442fe77382e1fb385f631803ed691a1d9e4"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves15/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "da0adc5f0cbffe931cc2dd5f8a4de362ec531e991ef2565fbe54662c4e98e6e2"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves15_minchild40/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "3845fae0f36ff5f3dc7e479a3446d5281c132f8c759ce0585404bd8f7034aa10"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves15_minchild40/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "20379d06f36760c0d837d2231bad4990f521718d1675390fe949e722e89d0d40"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves63/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "5fb81ce8a7a4a4f101b89a368bc8fac8acdc82faa24af7bd938ed1ed2e3d2c76"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves63/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "da0adc5f0cbffe931cc2dd5f8a4de362ec531e991ef2565fbe54662c4e98e6e2"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves63_lr003/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "98ed55f4e15af4c4ede37b7777edda02e22a2758170d98811354bbdd01b68e2d"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves63_lr003/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e34f14fdcc0b09b32e0d666bc57b1895c59267886d992cfc759bc25bced39c20"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lr003/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "c862a1c27636594b7c81c163dbfad704dd075766bff895612872b600fc24ef55"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lr003/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e34f14fdcc0b09b32e0d666bc57b1895c59267886d992cfc759bc25bced39c20"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lr01/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "9deaeddba104dfc8d2a50ebe5a34f0bab7f7f1e8b5e6e6190e00ef8658a37ad6"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/lr01/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "22e9f65751dacdacf2a3baf9c24b157a15d2f6935236307904d8b8610e5ce65f"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/minchild10/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "de9c932c5b56cafbba0f93d74135a0ff5bf7c82ad00fcbed666dfb626207fce0"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/minchild10/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "44a8ef708a0e9e07d5dbf0ceaf22445a2e0320fdcfb0546ad1de6b87ce0754cf"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/minchild40/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "908e4bc776ce33dba0d90330a4aff24bb27d223ec0315a8667d1bdddd5f6ea47"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/minchild40/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "20379d06f36760c0d837d2231bad4990f521718d1675390fe949e722e89d0d40"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/ref/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "81ce4674aa5cede890edc11c53579eb28e7fd26c5b4aed3dce0725470cd463b7"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/lightgbm/ref/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "da0adc5f0cbffe931cc2dd5f8a4de362ec531e991ef2565fbe54662c4e98e6e2"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/336_lr1e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "83b1f87b2d87d3d1756c791cf90d8c1a2ca9c5fe833ee2500d632a18ed0c95e4"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/336_lr1e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b1ea2cd91f628cecb654a4dbf9781172db292cf06d1a90c658595ea50fe043ea"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/336_lr1e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "034b1b60e6c72efdcd99d949d73da05304e5e75f44ab931a1c7912d5bd51ce6a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/336_lr1e4_drop02/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "7df828cf7afccddeef7b94d3a4b15e68f4ad574169782821516785235228c641"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/336_lr1e4_drop02/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f7c07c40d7a42d10251ff146a101f0b506b3eb5cba085452b9af97addcf2f769"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/336_lr1e4_drop02/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "01e11fed263ddd50e9deeb787ca0cf37ea7ddc68f74eed4670fe664521dfb436"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_drop02/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "61209efb2adeb4752747937081f646f3099599a7f937be6ce007734e0caa1b8a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_drop02/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8f5a54afcf529ab767a1392fabda1eefdc218d1b0179b878d741079362475507"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_drop02/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "1cb5c4ec1280be18d64113a40826c7b4c7269ca724a33cceecacf4aac070d51b"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr1e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "56907cd43e1cfb1ed163f4f44748cea4ac30c6bec188b320e089e3dc3c3a575e"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr1e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f049acd5bc33f9b9d7467e104fe1a54c31c8ac80693b92b1e2d6e23fcade2aa4"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr1e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f58c74790335c0eb6f8ab49ae6f64f91c77883c3ac0ee5912530bd51ae4ca288"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr5e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "a2413f2bb7cf4fdb17156efe6f97aeceac13eb4b78123795722c03ff1f601d57"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr5e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0df262f14a577f1f858cfa86b18f889448dfe9de4431c31dc76e459476eeb5db"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr5e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "99bde2785751b7927158028e43ad6d01fb7bed0117c4ad2699a5065261cc7ebc"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref336/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "bd3297c35fb54b4db3d0e7595ed8bb8bf92c95a24dbe641441bbcd2465e29cac"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref336/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b810e9116a8f8a76f3b0b6e76ff1a98a0d604eb0ff5d3ac8c48349d680a9c0d6"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref336/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "91ae22d8c6e21b37575f1af21c8662471073b9a39ec61531ad047f3d3d450283"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref64/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "b5c3a6232b482d1abcb564739ddcb9c9a4941efbbc52b210e5e8f46160030556"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref64/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "69c39d7ea3b1f75e62dc20b2d3a878cad4ec233a3a23590aab41d35c8e759a98"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref64/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "993d42c37090b8cc2e6a4ca2cf20d21b0a2355864952f94985d46263a1025db7"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_100/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "80cfd8fd57c9968ee5eebb3ffa21f89974b9881b8ad83ceab05f7803cb15d684"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_100/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4127f80707813abcf4328d99de9ac138ec220fc8395ec74e563c928ae3e4d33c"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_1000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "ab210ab34f7746db5193ad0c0f48e4adaf341858bfa195fb954730d8e12a28b8"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_1000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "eb9dcd61b2a8e5abb738671581f7acf90590e6a19a592d53c3ae1638b1e32385"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_10000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "1fb841edb16854f8796b4f904ba113f322126584adc99e21037b8c5d0cfdc74a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_10000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2f8c0b1964d44657e87024287a1171074dc8ec87929b2f66d2434a4fbea551c5"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_500/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "9a92996ae6f02280a0425114a48675f9a2a9b7c033738d62de5bdb18e2e0bbff"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_500/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "516db61c0f1469b30c0ff239afcd2e0b97c10d917a589531f81f11612f4ac90b"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_5000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "aa0754660f7032fc6e8dd536223ae94d52fdc7f109c522839d2998076defa9e8"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_5000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "35d208e8a07f33b1d2fbe0682d0c2a35a399cd3d8bbfa597acd04bf4626bd74d"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_50000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "1d6d7cac1e8fde3f82556eaa7a2598596f45fa2c51589c6d47d389c2210a054d"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/ridge/alpha_50000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "54867e25fd5efca2ba9d9d110bb3e2c178408980ad64cf8ec25d2de78493d7c4"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle20/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "f01997edcfbc344800d430b51d278d48de6b958e80a30a34638e7917c9c947b0"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle20/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a35ef0b1e79ff7a93921e2e35bfa95a9c18a04a4a890d763bf4889b8d9940849"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle20/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7c3210446560874a6dfab663e3077bc7f79a6c00b95dd64e8a572312c8a165fc"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle5/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "230f8e1de434f642f56b7d8ce24cd8ffca46958d4daa39d188774546b0394e6a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle5/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "cd92c05d669183702390ea2d602421b1a37e250d2d613c61bc58caa40a795a7d"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle5/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ab6b0acb84312c0464b962db1c407228ea7a675398559467646bd828eac06dd5"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle5_lr5e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "e6d80e14041e7786829d236afce4fb1c72cacab1303ec69cfec5e9487de6a51a"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle5_lr5e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "28e5c1bc009ab6a949c1d670561e7a22cc79cfc01f7ca5b4f788908ac04b67b8"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/cycle5_lr5e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "d0d999e9319b6a84cf558ab38debbfee26984b70b7711faa0b04e346a1b50447"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/drop02/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "2fed05d8198aee05749cb3e169657428d7125ceaae6be2a9b8dfdc55320ad6a6"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/drop02/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "632a933b1dfd0484fec2d6d360fb9e2ca898825860694be284a35b1c0b898aef"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/drop02/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "af416c9fb1b784e484dc11a5283c7a118c5646f766d0fe9b119677dba0ba52ae"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/huber_dir/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "57a1f86b889dcdcb90726d7620d9cca23ddc385c06ca783e873ad5b027edeae5"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/huber_dir/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "fa1cb5b75e2a155ab1d7fb39685474f3816150292c7990aef082c6d2b33a01c8"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/huber_dir/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "fedd850fcfd4759d165d2c76657df9ca90bc8629fd41369edca4d935b2aeaf33"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lb32_cycle5/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "c19d2a3f480ef582a4971660b05f965cc530effa3a4b4537d9dff15a712d394f"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lb32_cycle5/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "efe3613c6fd5e3ab5f6d9563efff592fb3121fe24bf20724cc35fe938be82fc7"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lb32_cycle5/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "09d4516808bcf9195c39d85982a831d1b3d47caace2ce85d42c296eb222cf925"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr1e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "cd63616133d58292155518159f7f5418883e715297ddf556895f9b8bbff790ee"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr1e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "48c728f2c8035a9c99237bda7008b4a9d29a7fbca4d1c1bff5006b41b0a04863"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr1e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "cc6b535313f4cf0ee7688a732d7f428ae885d69144d9a93fc78e8c9801dd19f0"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr5e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "77bdbf3569f4081b346e8c41e6d485794fc77267f53b544492fd4f168cb948c0"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr5e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "93026cf451f0df8464d3812f4a4bd2183084be49fec2f7a7aa0bfb1266da0db1"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/lr5e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "98005256409859ee710721d7c94bae1898b9d746c1c0da95e4c463d65cde5e73"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/ref/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "57d821940e328de87acb7b81c1ee29c1f4c92316abd736ad4e85e2467b4abbf8"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/ref/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b51b9bed36d48692543c9ca1495a8667d4a87a9d88b863726a6948117c080db8"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/ref/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "429f98258726315950ee636f914d64869ca33e8beb4a021bba35a5b417c1e87d"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/wd1e3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "fa0869fa215f7e913b7d67d2bf6cee4869940754ecb27d61eddae348c3d918dd"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/wd1e3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "58dec8b7f4d660ce69ce28dfdf1c20b3f3cbb4e3d676e10c18e5596454a09aeb"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search/tqnet/wd1e3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7f574eb82d3f3755159c5178ea08480c69ab0dda42fd109ceb8fd164ec7ac982"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/search_plan.json",
+      "origin": "training_zip/runs",
+      "sha256": "42eefdcbf3f4f6777ff7fb970abaa4caf4fa57380f857c05f741b54481fdd624"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/selected_models.json",
+      "origin": "training_zip/runs",
+      "sha256": "675f11e3ed895cbb2f872aa1438bfa1ffb79d30dce6247bbb950dc128b90fbd2"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/source_validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a1bd5e61ef613c3640d28a8240a89b2a1f92d592793337f3c3c60a5122e05c42"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/test_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c6570f48506dc607149950c53f85e516cb4cac24d0c88189620fd13d5a760782"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/tuning_trials.csv",
+      "origin": "training_zip/runs",
+      "sha256": "41f8e8ce2f6fdd9c5f86e359b420c658fc092ecdab3ed2b310b71993fea27693"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "65bf9760c0a7949b4854981e7fc5725177c4ffc502a150efdc51e9bd19e3d41c"
+    },
+    {
+      "path": "runs/20261119_201122_annualret_770f6c/调参报告.md",
+      "origin": "training_zip/runs",
+      "sha256": "badbe1514f6b2305f1a7213790cfd0597dae8e5b51d0d06a0d30fb35c3dd0710"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/close/lightgbm/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "361b07187d16a7fe08e56950ba0246667eb522137799c5de4551b827a29a3087"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/close/lightgbm/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a24e4854f8165f3e697f6f7e64440ce65cf04eed7016c07ff9bf933b79fcbdc1"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/close/lightgbm/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "85955b655b4d4bfe022005a4776709c577c154b1f1beaa6ca8dbe7fa9cdcfe67"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/close/ridge/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "83fdc860d2566c7d5399505a1a4dc006c2e37bc6a979a09419f0696bbaf2b6a6"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/close/ridge/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4e7cd94cfd9d2b390e3c235ce996860855818ec7f9b4eb3f2f569ae1ccd91650"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/close/ridge/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "dcb82ffa7f8b8c9bd7598c9ae148436a5b1bfaf38b35955b3805dafee8ea31ae"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/run_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "bf275b0b9a96d0fff53b998accc40f72278b1cd659d47cf41b95545d63bd07b2"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/test_target_dates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/trade/lightgbm/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "e2b076ea3135bd22b8bacde8346ef811821872b412ae517f7fbbd1d0d58b0983"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/trade/lightgbm/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0d5548c8344bf22c6b39e08f96b4a21e43471a23cfe3d726352eb26ea43ce750"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/trade/lightgbm/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8f35e0b49b913a51e3edc160627b33dd62b695d2b112505e5fdc565c1a94a22b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/trade/ridge/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "af726d41f86bbafce25b80141f1b54432346181fcac95ea9e14ae35e768ccce6"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/trade/ridge/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "75a3090b8e9e4c775c498f8250e6cd884bd78344d76018b6d2f72d99504ed79b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/trade/ridge/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e2a1549c11c0b9bfc6b5223ba4e969bdf1ee2f3fdb6c28261f98d06e9546d989"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/cpu/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "cbec1aa8d6198691ab4536dbe18fadb1a4c1b23e16766534be5a0ce146595ae0"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/acf/acf.png",
+      "origin": "training_zip/runs",
+      "sha256": "58c6b0c73ba1a0711bc2248440c088ce5f5759f3266eed0bb4083357b408ec9a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/acf/acf_values.csv",
+      "origin": "training_zip/runs",
+      "sha256": "04592fc10ac1aead43a82cbf350db8574b27b795fa70c77c854e4880fcf3164b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/acf/cycle_candidates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "67f99886a18eff35db342f91e454fd113f410e0086fb563551ebbceb24c0fe0a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/acf/cycle_selection.json",
+      "origin": "training_zip/runs",
+      "sha256": "128548788934c60e0846587d69b0270113e7dab685b89271d374feb2b223df10"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/patchtst/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "1856dd384b8982e712c3d20c14b9610a3b7cb35564ae281edf1535baa811513b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/patchtst/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f397cac9b2f6b1ba35c97b435fd05e998b6efeea35f8344dc169e425da4f6d04"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/patchtst/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2abf573b14c0c3a82cc72fa28a8eca9f8066ebbbb7c45c7b76006ebeb435c06b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/patchtst/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "75d05d5076e528a82c308a2d62ae243812a907820d7dc6916ebbcae8b6ce5371"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/tqnet/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "1692aa9c580d64c48585ec94f9cf3f432e3c6c38538bf8a309143a4d47ca7f25"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/tqnet/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8408ae3710fcaea0b9c876d2fee50e2db76753517c978647c1976e2eed6aab92"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/tqnet/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "01c5647941d9288584d31b9f58f353734d62c2c06bcc04e81902a906e344b8a6"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/close/tqnet/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "29484537a6d70ec76ea599eb945a9da425f7911617e4b2f37ccab94759f00737"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/run_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "ff2a9f4c1b192d2c0d7f3267bb067ab1bfd16126c406b9385743a5194d529d16"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/test_target_dates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/ensemble.json",
+      "origin": "training_zip/runs",
+      "sha256": "11d0ef395cf065ffb28b2fb82bdbf5331d963079c4aa4fa599e183e3b3584aa4"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/member_0.pt",
+      "origin": "training_zip/runs",
+      "sha256": "a2413f2bb7cf4fdb17156efe6f97aeceac13eb4b78123795722c03ff1f601d57"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/member_1.pt",
+      "origin": "training_zip/runs",
+      "sha256": "56907cd43e1cfb1ed163f4f44748cea4ac30c6bec188b320e089e3dc3c3a575e"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/member_2.pt",
+      "origin": "training_zip/runs",
+      "sha256": "b5c3a6232b482d1abcb564739ddcb9c9a4941efbbc52b210e5e8f46160030556"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "a2413f2bb7cf4fdb17156efe6f97aeceac13eb4b78123795722c03ff1f601d57"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "d2c1c876e9944ed722a8267ebf4d20c9b752b223e6aa22b3f53cc752df56ae40"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0df262f14a577f1f858cfa86b18f889448dfe9de4431c31dc76e459476eeb5db"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/patchtst/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "761bb3396274cf1133eb038d1d68e02433ec89160e6a8f181252eabff4ab744d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/tqnet/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "77bdbf3569f4081b346e8c41e6d485794fc77267f53b544492fd4f168cb948c0"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/tqnet/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "14796ef3b2bd3b54343c944f216a1928436add9eedb5d586f02e05e10c101213"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/tqnet/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "93026cf451f0df8464d3812f4a4bd2183084be49fec2f7a7aa0bfb1266da0db1"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/trade/tqnet/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "98005256409859ee710721d7c94bae1898b9d746c1c0da95e4c463d65cde5e73"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/gpu/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2e48c4bbc6e65eb61e4f144049a30d3280a4c7c629025869a6b8e8f062095d03"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/handoff/lightgbm_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "108ce84e0fb5c997effc4c6caed6f1759800c85f7fcf751a0b3488ab175ff502"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/handoff/manifest.json",
+      "origin": "training_zip/runs",
+      "sha256": "ba68324626df7a8c883046732652a876c566cd3f8665e864c125ccd029547c86"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/handoff/patchtst_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2e51eb03dd137ca8ff444852a6ffce310ade535add6553fe501efeee8576c87f"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/handoff/ridge_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "fc0bcc75f2efbf61e6960dce336ca879cd2c5fe445e5b0a5fe788fd80319aa4a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/handoff/tqnet_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "41e8360df5970d7ae7c2c1b838808bec484512846e25a7e21b914454e5f0662b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/handoff/交付说明.md",
+      "origin": "training_zip/runs",
+      "sha256": "430e4eccaeb781ec3aecce0ea9bd27f6adffde4626e037ff7ed2ac29371fd785"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/lightgbm_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0793efae841a0465ffc062600550358e176e181d461c6c8e963c31c9c5d7837c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/lightgbm_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "845dd58798ee25cf8a8be7e6a053ff1e8b2fe244ce02cb337c87b3557fbbd207"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/lightgbm_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a70e6bdfd2880f18754b661a6429a26695182f4d574101e67d8f3aab0094138d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/patchtst_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "3f49fe014d6e1aa1c9614229102eb84aa14ecb5ae460c99343be4b2df4967944"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/patchtst_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e6866f85a7bfd1570ea8a682847a57b1fb2ff82cce0e7f051f6a23a4a1b1271d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/patchtst_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "1a0d5ed3ec57d95d18647dc6e42d267dd329e38e21dc034b59327c0690bba456"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/ridge_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "653a775d5e055f12eba8cb41382cd129f89c045c3b0d4adf8a1e7321089d6a41"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/ridge_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b7e6f305a5bccbafaf6272903f951b90b7797aeaa0783da1b9545b255b4f7006"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/ridge_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "6fbeaade1b268e093805b034bcb057e60587497924072f6c5de27d6f0e8ed550"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/selected_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "b1c7929c41637ebf45f2633b3791bba66f871ae1e6f9c1bbdaf27e5f06516e39"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/strategy_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ae8dc547687690afb78010b71d9dd8893582556a97a5752feb11bf84ce593516"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/tqnet_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "573b95f6d2a21f9f8b01db1734a9cc9184de568509fbc577e6ab55b31bc80a62"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/tqnet_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2c4d5d120be75339c22ce4c2cf2b73768117bb7a74ac227bd6d642e916c4791f"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/research_strategy_backtest/tqnet_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e4a1749bf7397bb9d4d4ed19734143a44205b696585c7445aaa485e5408753d9"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_plan_r2.json",
+      "origin": "training_zip/runs",
+      "sha256": "c7c10cd5c395a8b69c4daa9131040151a8735234193a4d1039e69f945accfba8"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "5b3b13dba913eff3899c200576f6e6201166e169791067875a0ea1899ce1f7e3"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a24c7f267856e7bdcd3267ad7cb3b1b5c7256f373be1e15b1a225769cd1a0b02"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/leaves15_minchild40_s43/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "1e0262dea5251d048f0ac2e0dfebcead5b319377cc0ead2dbb238b0b3f6c0ba7"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/leaves15_minchild40_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0a320771c3e683821236f9a758f137b9a9721b72f1008a832a8685db3de2ccc9"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/leaves15_minchild40_s44/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "06ce91e7594c2d67e8746b7dcb2ecc1f4d4768416c20c6a26b6bebd28e24869b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/leaves15_minchild40_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "45182edd7624470e0300ec872abef835db73245d30435078804aebd7d908da7f"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/leaves15_minchild40_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4122ed000d0f59d59cc59466695ef7e4dcaed29f25275faf8164617ac5b989e5"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "e2b076ea3135bd22b8bacde8346ef811821872b412ae517f7fbbd1d0d58b0983"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8f35e0b49b913a51e3edc160627b33dd62b695d2b112505e5fdc565c1a94a22b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07_s43/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "fc01fe5688109d0ee4fef908e9d38e5d3400bf02a8891a30a860dc245e9267ed"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c3cb7b3baeeb3538e11b2c4906a9eeaf003ea2b34d3ab1bfcbe86263474e006c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07_s44/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "bb5d5bd9b92c24b512f468b8e1996bdb57caff64a0a6fb3f7729311af67e1a0f"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a3dc412ec18d253004352667f6dd9439fd857e349c9beb015f299849be5c0719"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_col07_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e3bcacb6f18e27077d58e4a14c779561025faad2abb1bf1444df48549a267183"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_depth3/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "01e3005e6c99007a8c288d5560e2b760bb9f01a093f991ebcb43025ee843f4ea"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_depth3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "38f113065ed7bc75ca3c2657137e72ff15af651ec0736603449c8b48fcafcc86"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_lambda05/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "fe785df640391e58553ff4f9080a5815c1178e694e1467731827256250e4255c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_lambda05/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "740ce04d860c5a616ad2741039062d9934772dbd32d064309e981177f6135fdd"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_lr003/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "cb1de0ca2a9e4dc01645fcae843c06adc931308f86a7b5de7d061c8e71b60db9"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild40_lr003/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "d6c153e1438ad1fcb9d4fce6249b3f33dfca276ee8a2bde4378f16ee0bd74f5d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild60/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "85edbff958a75a1982b41c7b65eaf2cc70dce94b3b04d0293bd3b3ed18c29b80"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild60/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "787753ded7fe1b6ef4b123e76b11f4b7554ff620bf2b08d1ee3cc17919dcc88f"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild80/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "c526f20ae0cc3f66b23a63175d7c97ede388da1494b91439a5a34a6069e53446"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/minchild80/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a2cc754cbbd5d561556014a761bc859500a7946580bbece8991af8af1b19acc3"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/128_lr3e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "fb0b490cdb70ea3dc247798392c1db1dfc61290b68a9c2fc268e4c595f99ff93"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/128_lr3e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "d2083ea420d92c7a9bcd33cf7c9cc9a0f8ce48bfd729094e653239cb98a791e8"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/128_lr3e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a25c83c60cea7647a1a8b4b8b9eb32e68a643c7bb58778aec5466a79f16f1435"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/128_lr5e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "af85c8b5234ce9ca0b5fa215da1c2b750ffbc5ebc194fa40d31789c97bd907b4"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/128_lr5e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "dd0b9cc44ae90582e342909ca70ed83587c5cbfeed123c36a2a8db97d7b86b2d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/128_lr5e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "93ad2213645f03f76cbf653ff5a1c828a3e77788b2ebe73a22bd94a63593ca1f"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr1e3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "fb6436039fbe201cc869ab284ff7b260e3f9fd3d36a153720db2ca4c16c13b87"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr1e3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7ad7bed5dfd54ca0b665e9277147107219a0280ee8e1ef15d3d0b511e859203e"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr1e3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "9cfe1701f296bcedcb1660c15647709b0be05eadb8ed1390f60b0714382e414b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_drop02/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "04a151738ce41815b72f3e7da3b05fbb7e26a4c6bf09e2b1006c9d6de94fdf8b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_drop02/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0610d25ea7d258d50bbe1aeb271ac550a20a439ed10ecf155d668da6bfc22ac0"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_drop02/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "13e7f034c3426be1719ec11cebbafdf6841886c57c6162bbca45309135a9204a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_layers3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "c320ecbb4e5e0775fc264958876435070f8beeb9975a3e7de1de1e11e78d7b77"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_layers3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "eec93c0f3554c7c27b3e3936ddbf7772db81281a58d017473771b45b02433682"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_layers3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "38d8bd8fafa2cb73d861d7016eeb0a0365ecdb85f204001b2192784427e9861f"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "9130a361200cd97c9be19c724111bfc7549314813bf52b481fff233e3ad08e2a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ed0718ce5d759e868e3dc32c5c92be15ce3a4fde6a9207c368bc8bde57f620c4"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "324ee366852e57a257d5bd69d03d5e69ffe631a55845600064315b7a7b621a7a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "f7e68e7a22a23b9c4690882c5f53deaa37e6e47f8a4d9f5d045da88465670856"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4550e5fc5703f939d3f13fad3bd6bbbc288919c4fc9a8821277b2b1c2b820d69"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b99e594a98c8acb3e5320a14f9bdd6b2841fd776035e142cc9a37eeb156ce08d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr5e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b0a91dcec109836bf24ebf7eddfa7b59908baee8d1838d2322cafdfd2cd61194"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "cb41f5885895243a2e1fcb3174272304f7e16091c340c5def59c3e5018cde299"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8bb910193e016456cadd7fd6da3af351152795196252aabc43edc8351e75f394"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "582e841c790c02235ba3798f972ef7050bbf33fa51a80e33129ee74e346c0fb6"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "42c2ad7cb306f0113d7a493cea4c6c3e8777171d9a8732dde62b5f5e0c77514c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "22e0d2e27c00d10fca6e6a68f0a32882d83594e9089adcefc16d2059ec61dc81"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "28f61c1eb80170163912633292fe6d2f2fc52d544a6d6ac1b95078b5c85e71f4"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "8db8ed183862d739a52016cb5a3973b62516830b1d19edfdff9ba582955ceb95"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0c65822a4eb3b9f2fe208b52b3612a53f36737a9356555cd21bbbed19a39217b"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f288bf455fb4fb948e4e937c914bd76ca0571435f999d2d2027ad20f2b5b88fd"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/64_lr7e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "77d8e65615f5c40659cf509d00c47ea809fe7823b144ef2d4a86167bc864e6ac"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ef574dbeeac1d9d1ace73d164542699cd6b9b01fadf389832da259fe7bf7153d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/patchtst/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "761bb3396274cf1133eb038d1d68e02433ec89160e6a8f181252eabff4ab744d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_15000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "f31cf7d5c127089e267de4adb03c0dd66dee696c3c0f43d9c28b583e92ddc163"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_15000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "310f57551c3a7e84ee96e7e4af872ba5565dc789b9880a6119f45beaf11bd384"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_20000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "b2f6cb4d98c3d77e815174d7e26f401257797660db45a56919b455fc1234099c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_20000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "027b57cd825cdf712952e5590eb3aedf129b879ecfb89587a33c2d41a643c2b4"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_7500/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "af726d41f86bbafce25b80141f1b54432346181fcac95ea9e14ae35e768ccce6"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/alpha_7500/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e2a1549c11c0b9bfc6b5223ba4e969bdf1ee2f3fdb6c28261f98d06e9546d989"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "33b65ff1799c872ceb4e7d41d55fc31d14c4fa956f8fb35b93fb7e56c98eb3dd"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/ridge/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "1bb38b68ffc1fa428eff903a1ad261a03d2a93f416f1cbad5b0f3f23718e619e"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7738397aa0d46c154c20d41069ec53f5d2cff9046222bf00de8942be8f1dc890"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "34c6a08d6ba27eff6b5ea45215faf51d026b121ae72d00393956de46287ff309"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lb128_lr5e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "0177e9c72e3b4635113aeeed572d89c47b7dce851ae8a14357ff8fbccf973ab4"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lb128_lr5e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "29006280851fefef051e5e9292431cc61b8c4628e5fa1343d6fe96ba6f0bf0e6"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lb128_lr5e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0b3c548b3c616c712667132fb9a47fd8c614bd874beaa264fca060c9bc1da95e"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr1e3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "629abb1fb295c207063a27d1e33b987dd14692131a23bf241633feb5b974670a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr1e3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "630e047bdc6a7dbc95019bcf1910e318fcc045ec096d51bfb02e04803cd3db45"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr1e3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "5f771d2d80b83d4d6ccecf4f2a565e5a10a7bc73652ae2dc6b4141e4aac85f12"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_drop02/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "5ccc95472ec83ac1c509dee090a1e25ffa1e711ac799e3c9d6e0aed055485413"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_drop02/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "6c38e0a10769ca4337de1a87a5077cc6566983cac340f0b6df8d3c7e99aeccc4"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_drop02/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c0b71bf938f666ae9f5c83ace39db42bdfe6e61130bfa4f0a33b21cb3a2f0a55"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_huberdir/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "fbc459df2d5efa6a9bb8e071405e327e8582884a857ab5be170e957988ebb380"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_huberdir/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "90f53fe1191b0c0d9dd9db2fe7456dc83f4fe314853a013cdc59b17c6a7430ed"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_huberdir/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "3efdb8d4bb248493b869b78ed27c6d1451b9dfbf8fdeb89a0ec2b728a3790bbd"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "8424ba237b6b589d8588c7ac3bb512f325659c8ff22564933591e05db80f5405"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0cec50ec6c7f4202447061c97e3b25ae15497a1ebe1f401293b51e640b344d0a"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "bd94a6742b12f958ee8ddec5ae1e15e61d07f573071c15387cad8f47793b3fc1"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "61cca6547e462105543c0771739bdb1a8749cb4f106a8613cd5bae2c4c3cd9f3"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "17c514b6a5ebc037d3a5f37d7cda2e680fcf21e9ee04a94d9c569a0cfa6d9a33"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "251ca0f4fc04fc618fd6bd5915b5e3499becfc6eb069ff942e39f47eb2262ede"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "bea596b173e11a18c3bad5aedd803909ebeb274241173f0668c9958e119bd050"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_wd1e3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "cc1010573a320722a03b867a9ca3a622f87598dfd195368ae0665be2dfe37ada"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_wd1e3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "28c2aa31fb458caab15d174ea8d5847d0d7f0a93831f61c5a69416105307bebf"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr5e4_wd1e3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c183d7492786dcbabc3e327439aafa016f4533a5eeaed601320258dcfebd0c52"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "42f7b5048b9e1ba41b93d0c4d76a376667cff4b7e72ab447fc362c45c5b46216"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "22ed30a2466411c2fe2fc5f39db00c03408bf01d1d17a08d1d666dc3beab6d39"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "82d82328c32201b10f3c232c6daf96dd44d3951f91e6bc5723499a2bba3c8e95"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "c72b1cab19f123cbdb87846ae3206ee3ae612ef95b9075d9afeb78b656093c14"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "367a2161730e9fa87fc016c82e2506fec77c40023a3334eb0d005dba58a6fc08"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "66d8a857e6de9032c5d77f9d69e6a7d1b84e00525d2c57374bca18098ad3daa6"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "ce054ce2b32d25b3cd9eceb1dccf40b8e56056cb843c2e704c9f38f852659d6d"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "47188d6020e76d12aa3ee9b6f5a6f9c996231ad7af6ef2287d87aeb38f3d7366"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "404d64c2987da259ff28b067cf2a2bf95470132613debf9fa598bdec3ad728aa"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/search_r2/tqnet/lr7e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0aecfa0e13c58e945a5ec9f56a3ed0e043baed8490150bad797c2eb8101747a1"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/selected_models_r2.json",
+      "origin": "training_zip/runs",
+      "sha256": "502eef7844321a5649a854321555426f2689fe8a7e3d0b2b4ec451faa1c4a4de"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/source_validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "65bf9760c0a7949b4854981e7fc5725177c4ffc502a150efdc51e9bd19e3d41c"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/test_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "bf5081ee0be777d415cf1f2adeddf22b8dacdf09434157cc3e4ef0f9c58d21f2"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/tuning_trials_r2.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b0ddc7cc0b9012bd686deb2d579bd80a6668915ee2202e90294c38813cdf6da3"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e5d3a92ee0c4c4dce2e7c5336fda469ed24396d5759dbcb198336686a476f9a7"
+    },
+    {
+      "path": "runs/20261119_231541_annualret2_5619ec/调参报告第二轮.md",
+      "origin": "training_zip/runs",
+      "sha256": "76434e31a50f2e188185e9dab0e334c30b31c63ff243ff307506f1efa0e73a6a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/close/lightgbm/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "361b07187d16a7fe08e56950ba0246667eb522137799c5de4551b827a29a3087"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/close/lightgbm/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a24e4854f8165f3e697f6f7e64440ce65cf04eed7016c07ff9bf933b79fcbdc1"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/close/lightgbm/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "85955b655b4d4bfe022005a4776709c577c154b1f1beaa6ca8dbe7fa9cdcfe67"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/close/ridge/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "83fdc860d2566c7d5399505a1a4dc006c2e37bc6a979a09419f0696bbaf2b6a6"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/close/ridge/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4e7cd94cfd9d2b390e3c235ce996860855818ec7f9b4eb3f2f569ae1ccd91650"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/close/ridge/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "dcb82ffa7f8b8c9bd7598c9ae148436a5b1bfaf38b35955b3805dafee8ea31ae"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/run_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "54aaad41e164b8e0529724eaeddaf7ba09bafdb0508da10d3ef1b9c48f2aa643"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/test_target_dates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/lightgbm/ensemble.json",
+      "origin": "training_zip/runs",
+      "sha256": "e963303476591b3d0743a8a4ce7c4891fda46ebe009ccbdd7eebd7457591a739"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/lightgbm/member_0.txt",
+      "origin": "training_zip/runs",
+      "sha256": "3845fae0f36ff5f3dc7e479a3446d5281c132f8c759ce0585404bd8f7034aa10"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/lightgbm/member_1.txt",
+      "origin": "training_zip/runs",
+      "sha256": "1e0262dea5251d048f0ac2e0dfebcead5b319377cc0ead2dbb238b0b3f6c0ba7"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/lightgbm/member_2.txt",
+      "origin": "training_zip/runs",
+      "sha256": "06ce91e7594c2d67e8746b7dcb2ecc1f4d4768416c20c6a26b6bebd28e24869b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/lightgbm/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "3845fae0f36ff5f3dc7e479a3446d5281c132f8c759ce0585404bd8f7034aa10"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/lightgbm/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "be00c42652a67756f55bc81a7138a55f12c5814ca2f332d21ea52c34323cb249"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/lightgbm/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4122ed000d0f59d59cc59466695ef7e4dcaed29f25275faf8164617ac5b989e5"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/ridge/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "1fb841edb16854f8796b4f904ba113f322126584adc99e21037b8c5d0cfdc74a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/ridge/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "175c32dfcb84c2996c6271058125b180034174aa4c0ee46640cd4372c8f908d3"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/trade/ridge/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2f8c0b1964d44657e87024287a1171074dc8ec87929b2f66d2434a4fbea551c5"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/cpu/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8da02270258a6d73c557b7b81000ee3174ba7f4a8fc8dffe495b08277c165f72"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/final_selection.json",
+      "origin": "training_zip/runs",
+      "sha256": "a21abcea11e564c975e033c402da1d0cf3b191587608a21e097653874829bcdd"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/acf/acf.png",
+      "origin": "training_zip/runs",
+      "sha256": "58c6b0c73ba1a0711bc2248440c088ce5f5759f3266eed0bb4083357b408ec9a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/acf/acf_values.csv",
+      "origin": "training_zip/runs",
+      "sha256": "04592fc10ac1aead43a82cbf350db8574b27b795fa70c77c854e4880fcf3164b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/acf/cycle_candidates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "67f99886a18eff35db342f91e454fd113f410e0086fb563551ebbceb24c0fe0a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/acf/cycle_selection.json",
+      "origin": "training_zip/runs",
+      "sha256": "128548788934c60e0846587d69b0270113e7dab685b89271d374feb2b223df10"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/patchtst/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "1856dd384b8982e712c3d20c14b9610a3b7cb35564ae281edf1535baa811513b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/patchtst/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f397cac9b2f6b1ba35c97b435fd05e998b6efeea35f8344dc169e425da4f6d04"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/patchtst/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "2abf573b14c0c3a82cc72fa28a8eca9f8066ebbbb7c45c7b76006ebeb435c06b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/patchtst/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "75d05d5076e528a82c308a2d62ae243812a907820d7dc6916ebbcae8b6ce5371"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/tqnet/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "1692aa9c580d64c48585ec94f9cf3f432e3c6c38538bf8a309143a4d47ca7f25"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/tqnet/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8408ae3710fcaea0b9c876d2fee50e2db76753517c978647c1976e2eed6aab92"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/tqnet/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "01c5647941d9288584d31b9f58f353734d62c2c06bcc04e81902a906e344b8a6"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/close/tqnet/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "29484537a6d70ec76ea599eb945a9da425f7911617e4b2f37ccab94759f00737"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/run_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "dbaf685215ac2110e0af5db28854a1c899c42d879050274f45c3b9af29739738"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/test_target_dates.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/ensemble.json",
+      "origin": "training_zip/runs",
+      "sha256": "11d0ef395cf065ffb28b2fb82bdbf5331d963079c4aa4fa599e183e3b3584aa4"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/member_0.pt",
+      "origin": "training_zip/runs",
+      "sha256": "a2413f2bb7cf4fdb17156efe6f97aeceac13eb4b78123795722c03ff1f601d57"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/member_1.pt",
+      "origin": "training_zip/runs",
+      "sha256": "56907cd43e1cfb1ed163f4f44748cea4ac30c6bec188b320e089e3dc3c3a575e"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/member_2.pt",
+      "origin": "training_zip/runs",
+      "sha256": "b5c3a6232b482d1abcb564739ddcb9c9a4941efbbc52b210e5e8f46160030556"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "a2413f2bb7cf4fdb17156efe6f97aeceac13eb4b78123795722c03ff1f601d57"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "d2c1c876e9944ed722a8267ebf4d20c9b752b223e6aa22b3f53cc752df56ae40"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0df262f14a577f1f858cfa86b18f889448dfe9de4431c31dc76e459476eeb5db"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/patchtst/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "761bb3396274cf1133eb038d1d68e02433ec89160e6a8f181252eabff4ab744d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/tqnet/ensemble.json",
+      "origin": "training_zip/runs",
+      "sha256": "6ace3c566448965d39d3118686c06f87ddda1ff884b420da2c0317ea986e1629"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/tqnet/member_0.pt",
+      "origin": "training_zip/runs",
+      "sha256": "77bdbf3569f4081b346e8c41e6d485794fc77267f53b544492fd4f168cb948c0"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/tqnet/member_1.pt",
+      "origin": "training_zip/runs",
+      "sha256": "8424ba237b6b589d8588c7ac3bb512f325659c8ff22564933591e05db80f5405"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/tqnet/member_2.pt",
+      "origin": "training_zip/runs",
+      "sha256": "61cca6547e462105543c0771739bdb1a8749cb4f106a8613cd5bae2c4c3cd9f3"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/tqnet/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "77bdbf3569f4081b346e8c41e6d485794fc77267f53b544492fd4f168cb948c0"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/tqnet/predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "1b3aaeab0829d73de07898bb60ddc5954d21d2edc6f9148669be24db12b1ed14"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/trade/tqnet/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "bea596b173e11a18c3bad5aedd803909ebeb274241173f0668c9958e119bd050"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/gpu/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "86eeb4eab9059115c8933303fa4a96b0831f53de8fcbf44024607c404b44bd72"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/handoff/lightgbm_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7db74ce2a3369d114cc8ae6b686b18b810c7f7fdcec39bc9513ea38469dcc0d8"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/handoff/manifest.json",
+      "origin": "training_zip/runs",
+      "sha256": "4b1336844fb97faa015cd805603e4d97308881c2102bee04a1a6b68c216e856e"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/handoff/patchtst_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ef86b5431319889a58a9e993a8fa9042bf268124986e104b61d2559a2fae2b6d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/handoff/ridge_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "cf4f657e5e974dcb572b57b711826ac41e22d4824cecabc418273fa4de3e4fe8"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/handoff/tqnet_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "43543c9e5617bd6f17c96e5ddec7ca12b2eed6a12b6cbf015f5a8af874d3e925"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/handoff/交付说明.md",
+      "origin": "training_zip/runs",
+      "sha256": "153c3c2279967a80315f3b9d4377974c1c0d875cbbf554c4684ea452a0017bd7"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/lightgbm_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a74da93bea98b31ebeca21b562ea1703eeb3a8ba052510eed7adc1a075d7a8b7"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/lightgbm_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "cde474d7c168f855136819b6d519d7358e129c4b646e29c2b19b6bab2fbbb278"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/lightgbm_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "5fc443a12753fe2c6797865d0288a441bec995c31b4413adf91bb439a5f7d85d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/patchtst_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "3f49fe014d6e1aa1c9614229102eb84aa14ecb5ae460c99343be4b2df4967944"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/patchtst_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e6866f85a7bfd1570ea8a682847a57b1fb2ff82cce0e7f051f6a23a4a1b1271d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/patchtst_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "1a0d5ed3ec57d95d18647dc6e42d267dd329e38e21dc034b59327c0690bba456"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/ridge_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0e8d345f82a30746d4530f47d6d8ae1e84d09a2ff0f158180c68d272578d2c28"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/ridge_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7d10e28df4ec1e03118ab4c66b3b5a847b6eb04f65a53de72831c709a22c7b66"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/ridge_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4612b4f58ed3dedf9b92b42092dbd652bf4c369a597206bbcb2caad14c45ece8"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/selected_config.json",
+      "origin": "training_zip/runs",
+      "sha256": "b1c7929c41637ebf45f2633b3791bba66f871ae1e6f9c1bbdaf27e5f06516e39"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/strategy_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "9c7ced1e104f045165659d0144290da7ae25be4a7990a94baaaf03bf64d92025"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/tqnet_decisions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b9f4109e781feb16a2d2c58c3c777a3db286ebbc9c64f3c0385b9f1af87e3476"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/tqnet_equity.csv",
+      "origin": "training_zip/runs",
+      "sha256": "79b5a219e075991258c8a10fe8e08405e2a683f6462e24cd1f515b9da89b3743"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/research_strategy_backtest/tqnet_trades.csv",
+      "origin": "training_zip/runs",
+      "sha256": "5c59c1b1c6a6c1b09e5c139d3c54545dd17674245b37dedc014bbda4d13192e9"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_plan_r2.json",
+      "origin": "training_zip/runs",
+      "sha256": "c7c10cd5c395a8b69c4daa9131040151a8735234193a4d1039e69f945accfba8"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "5b3b13dba913eff3899c200576f6e6201166e169791067875a0ea1899ce1f7e3"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a24c7f267856e7bdcd3267ad7cb3b1b5c7256f373be1e15b1a225769cd1a0b02"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/leaves15_minchild40_s43/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "1e0262dea5251d048f0ac2e0dfebcead5b319377cc0ead2dbb238b0b3f6c0ba7"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/leaves15_minchild40_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0a320771c3e683821236f9a758f137b9a9721b72f1008a832a8685db3de2ccc9"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/leaves15_minchild40_s44/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "06ce91e7594c2d67e8746b7dcb2ecc1f4d4768416c20c6a26b6bebd28e24869b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/leaves15_minchild40_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "45182edd7624470e0300ec872abef835db73245d30435078804aebd7d908da7f"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/leaves15_minchild40_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4122ed000d0f59d59cc59466695ef7e4dcaed29f25275faf8164617ac5b989e5"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_col07/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "e2b076ea3135bd22b8bacde8346ef811821872b412ae517f7fbbd1d0d58b0983"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_col07/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8f35e0b49b913a51e3edc160627b33dd62b695d2b112505e5fdc565c1a94a22b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_col07_s43/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "fc01fe5688109d0ee4fef908e9d38e5d3400bf02a8891a30a860dc245e9267ed"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_col07_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c3cb7b3baeeb3538e11b2c4906a9eeaf003ea2b34d3ab1bfcbe86263474e006c"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_col07_s44/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "bb5d5bd9b92c24b512f468b8e1996bdb57caff64a0a6fb3f7729311af67e1a0f"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_col07_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a3dc412ec18d253004352667f6dd9439fd857e349c9beb015f299849be5c0719"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_col07_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e3bcacb6f18e27077d58e4a14c779561025faad2abb1bf1444df48549a267183"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_depth3/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "01e3005e6c99007a8c288d5560e2b760bb9f01a093f991ebcb43025ee843f4ea"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_depth3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "38f113065ed7bc75ca3c2657137e72ff15af651ec0736603449c8b48fcafcc86"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_lambda05/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "fe785df640391e58553ff4f9080a5815c1178e694e1467731827256250e4255c"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_lambda05/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "740ce04d860c5a616ad2741039062d9934772dbd32d064309e981177f6135fdd"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_lr003/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "cb1de0ca2a9e4dc01645fcae843c06adc931308f86a7b5de7d061c8e71b60db9"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild40_lr003/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "d6c153e1438ad1fcb9d4fce6249b3f33dfca276ee8a2bde4378f16ee0bd74f5d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild60/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "85edbff958a75a1982b41c7b65eaf2cc70dce94b3b04d0293bd3b3ed18c29b80"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild60/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "787753ded7fe1b6ef4b123e76b11f4b7554ff620bf2b08d1ee3cc17919dcc88f"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild80/model.txt",
+      "origin": "training_zip/runs",
+      "sha256": "c526f20ae0cc3f66b23a63175d7c97ede388da1494b91439a5a34a6069e53446"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/lightgbm/minchild80/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a2cc754cbbd5d561556014a761bc859500a7946580bbece8991af8af1b19acc3"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/128_lr3e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "fb0b490cdb70ea3dc247798392c1db1dfc61290b68a9c2fc268e4c595f99ff93"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/128_lr3e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "d2083ea420d92c7a9bcd33cf7c9cc9a0f8ce48bfd729094e653239cb98a791e8"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/128_lr3e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "a25c83c60cea7647a1a8b4b8b9eb32e68a643c7bb58778aec5466a79f16f1435"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/128_lr5e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "af85c8b5234ce9ca0b5fa215da1c2b750ffbc5ebc194fa40d31789c97bd907b4"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/128_lr5e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "dd0b9cc44ae90582e342909ca70ed83587c5cbfeed123c36a2a8db97d7b86b2d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/128_lr5e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "93ad2213645f03f76cbf653ff5a1c828a3e77788b2ebe73a22bd94a63593ca1f"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr1e3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "fb6436039fbe201cc869ab284ff7b260e3f9fd3d36a153720db2ca4c16c13b87"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr1e3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7ad7bed5dfd54ca0b665e9277147107219a0280ee8e1ef15d3d0b511e859203e"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr1e3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "9cfe1701f296bcedcb1660c15647709b0be05eadb8ed1390f60b0714382e414b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_drop02/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "04a151738ce41815b72f3e7da3b05fbb7e26a4c6bf09e2b1006c9d6de94fdf8b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_drop02/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0610d25ea7d258d50bbe1aeb271ac550a20a439ed10ecf155d668da6bfc22ac0"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_drop02/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "13e7f034c3426be1719ec11cebbafdf6841886c57c6162bbca45309135a9204a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_layers3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "c320ecbb4e5e0775fc264958876435070f8beeb9975a3e7de1de1e11e78d7b77"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_layers3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "eec93c0f3554c7c27b3e3936ddbf7772db81281a58d017473771b45b02433682"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_layers3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "38d8bd8fafa2cb73d861d7016eeb0a0365ecdb85f204001b2192784427e9861f"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "9130a361200cd97c9be19c724111bfc7549314813bf52b481fff233e3ad08e2a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ed0718ce5d759e868e3dc32c5c92be15ce3a4fde6a9207c368bc8bde57f620c4"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "324ee366852e57a257d5bd69d03d5e69ffe631a55845600064315b7a7b621a7a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "f7e68e7a22a23b9c4690882c5f53deaa37e6e47f8a4d9f5d045da88465670856"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "4550e5fc5703f939d3f13fad3bd6bbbc288919c4fc9a8821277b2b1c2b820d69"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b99e594a98c8acb3e5320a14f9bdd6b2841fd776035e142cc9a37eeb156ce08d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr5e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b0a91dcec109836bf24ebf7eddfa7b59908baee8d1838d2322cafdfd2cd61194"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "cb41f5885895243a2e1fcb3174272304f7e16091c340c5def59c3e5018cde299"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "8bb910193e016456cadd7fd6da3af351152795196252aabc43edc8351e75f394"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "582e841c790c02235ba3798f972ef7050bbf33fa51a80e33129ee74e346c0fb6"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "42c2ad7cb306f0113d7a493cea4c6c3e8777171d9a8732dde62b5f5e0c77514c"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "22e0d2e27c00d10fca6e6a68f0a32882d83594e9089adcefc16d2059ec61dc81"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "28f61c1eb80170163912633292fe6d2f2fc52d544a6d6ac1b95078b5c85e71f4"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "8db8ed183862d739a52016cb5a3973b62516830b1d19edfdff9ba582955ceb95"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0c65822a4eb3b9f2fe208b52b3612a53f36737a9356555cd21bbbed19a39217b"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "f288bf455fb4fb948e4e937c914bd76ca0571435f999d2d2027ad20f2b5b88fd"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/64_lr7e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "77d8e65615f5c40659cf509d00c47ea809fe7823b144ef2d4a86167bc864e6ac"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "ef574dbeeac1d9d1ace73d164542699cd6b9b01fadf389832da259fe7bf7153d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/patchtst/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "761bb3396274cf1133eb038d1d68e02433ec89160e6a8f181252eabff4ab744d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/alpha_15000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "f31cf7d5c127089e267de4adb03c0dd66dee696c3c0f43d9c28b583e92ddc163"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/alpha_15000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "310f57551c3a7e84ee96e7e4af872ba5565dc789b9880a6119f45beaf11bd384"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/alpha_20000/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "b2f6cb4d98c3d77e815174d7e26f401257797660db45a56919b455fc1234099c"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/alpha_20000/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "027b57cd825cdf712952e5590eb3aedf129b879ecfb89587a33c2d41a643c2b4"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/alpha_7500/model.joblib",
+      "origin": "training_zip/runs",
+      "sha256": "af726d41f86bbafce25b80141f1b54432346181fcac95ea9e14ae35e768ccce6"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/alpha_7500/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e2a1549c11c0b9bfc6b5223ba4e969bdf1ee2f3fdb6c28261f98d06e9546d989"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "33b65ff1799c872ceb4e7d41d55fc31d14c4fa956f8fb35b93fb7e56c98eb3dd"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/ridge/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "1bb38b68ffc1fa428eff903a1ad261a03d2a93f416f1cbad5b0f3f23718e619e"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/ens_top2/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "7738397aa0d46c154c20d41069ec53f5d2cff9046222bf00de8942be8f1dc890"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/ens_top3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "34c6a08d6ba27eff6b5ea45215faf51d026b121ae72d00393956de46287ff309"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lb128_lr5e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "0177e9c72e3b4635113aeeed572d89c47b7dce851ae8a14357ff8fbccf973ab4"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lb128_lr5e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "29006280851fefef051e5e9292431cc61b8c4628e5fa1343d6fe96ba6f0bf0e6"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lb128_lr5e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0b3c548b3c616c712667132fb9a47fd8c614bd874beaa264fca060c9bc1da95e"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr1e3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "629abb1fb295c207063a27d1e33b987dd14692131a23bf241633feb5b974670a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr1e3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "630e047bdc6a7dbc95019bcf1910e318fcc045ec096d51bfb02e04803cd3db45"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr1e3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "5f771d2d80b83d4d6ccecf4f2a565e5a10a7bc73652ae2dc6b4141e4aac85f12"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_drop02/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "5ccc95472ec83ac1c509dee090a1e25ffa1e711ac799e3c9d6e0aed055485413"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_drop02/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "6c38e0a10769ca4337de1a87a5077cc6566983cac340f0b6df8d3c7e99aeccc4"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_drop02/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c0b71bf938f666ae9f5c83ace39db42bdfe6e61130bfa4f0a33b21cb3a2f0a55"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_huberdir/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "fbc459df2d5efa6a9bb8e071405e327e8582884a857ab5be170e957988ebb380"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_huberdir/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "90f53fe1191b0c0d9dd9db2fe7456dc83f4fe314853a013cdc59b17c6a7430ed"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_huberdir/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "3efdb8d4bb248493b869b78ed27c6d1451b9dfbf8fdeb89a0ec2b728a3790bbd"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "8424ba237b6b589d8588c7ac3bb512f325659c8ff22564933591e05db80f5405"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0cec50ec6c7f4202447061c97e3b25ae15497a1ebe1f401293b51e640b344d0a"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "bd94a6742b12f958ee8ddec5ae1e15e61d07f573071c15387cad8f47793b3fc1"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "61cca6547e462105543c0771739bdb1a8749cb4f106a8613cd5bae2c4c3cd9f3"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "17c514b6a5ebc037d3a5f37d7cda2e680fcf21e9ee04a94d9c569a0cfa6d9a33"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "251ca0f4fc04fc618fd6bd5915b5e3499becfc6eb069ff942e39f47eb2262ede"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "bea596b173e11a18c3bad5aedd803909ebeb274241173f0668c9958e119bd050"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_wd1e3/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "cc1010573a320722a03b867a9ca3a622f87598dfd195368ae0665be2dfe37ada"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_wd1e3/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "28c2aa31fb458caab15d174ea8d5847d0d7f0a93831f61c5a69416105307bebf"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr5e4_wd1e3/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "c183d7492786dcbabc3e327439aafa016f4533a5eeaed601320258dcfebd0c52"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "42f7b5048b9e1ba41b93d0c4d76a376667cff4b7e72ab447fc362c45c5b46216"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "22ed30a2466411c2fe2fc5f39db00c03408bf01d1d17a08d1d666dc3beab6d39"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "82d82328c32201b10f3c232c6daf96dd44d3951f91e6bc5723499a2bba3c8e95"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4_s43/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "c72b1cab19f123cbdb87846ae3206ee3ae612ef95b9075d9afeb78b656093c14"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4_s43/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "367a2161730e9fa87fc016c82e2506fec77c40023a3334eb0d005dba58a6fc08"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4_s43/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "66d8a857e6de9032c5d77f9d69e6a7d1b84e00525d2c57374bca18098ad3daa6"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4_s44/model.pt",
+      "origin": "training_zip/runs",
+      "sha256": "ce054ce2b32d25b3cd9eceb1dccf40b8e56056cb843c2e704c9f38f852659d6d"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4_s44/training_history.csv",
+      "origin": "training_zip/runs",
+      "sha256": "47188d6020e76d12aa3ee9b6f5a6f9c996231ad7af6ef2287d87aeb38f3d7366"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4_s44/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "404d64c2987da259ff28b067cf2a2bf95470132613debf9fa598bdec3ad728aa"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/search_r2/tqnet/lr7e4_seedens/validation_predictions.csv",
+      "origin": "training_zip/runs",
+      "sha256": "0aecfa0e13c58e945a5ec9f56a3ed0e043baed8490150bad797c2eb8101747a1"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/selected_models_r2.json",
+      "origin": "training_zip/runs",
+      "sha256": "502eef7844321a5649a854321555426f2689fe8a7e3d0b2b4ec451faa1c4a4de"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/source_validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "e5d3a92ee0c4c4dce2e7c5336fda469ed24396d5759dbcb198336686a476f9a7"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/test_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "16d2dc712862d9d0973651f804aa788222651b509c758a02cc2d94ed983e2aa2"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/tuning_trials_r2.csv",
+      "origin": "training_zip/runs",
+      "sha256": "b0ddc7cc0b9012bd686deb2d579bd80a6668915ee2202e90294c38813cdf6da3"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/validation_metrics.csv",
+      "origin": "training_zip/runs",
+      "sha256": "5f1d9b593c02401d29a82a45c830df9aa3564bbc11fb749c5592d537862108a2"
+    },
+    {
+      "path": "runs/20261119_233827_annualret_final_cd62b2/调参报告第二轮.md",
+      "origin": "training_zip/runs",
+      "sha256": "76434e31a50f2e188185e9dab0e334c30b31c63ff243ff307506f1efa0e73a6a"
+    },
+    {
+      "path": "reports/baseline_tuning/baseline-model-selection-handover.md",
+      "origin": "training_zip/reports",
+      "sha256": "185c652d4da5ba652586289d3b4716372a246f17351a9e84033a7210b9e14ba0"
+    },
+    {
+      "path": "reports/baseline_tuning/tuning_trials_20261119.csv",
+      "origin": "training_zip/reports",
+      "sha256": "41f8e8ce2f6fdd9c5f86e359b420c658fc092ecdab3ed2b310b71993fea27693"
+    },
+    {
+      "path": "reports/baseline_tuning/tuning_trials_r2_20261119.csv",
+      "origin": "training_zip/reports",
+      "sha256": "b0ddc7cc0b9012bd686deb2d579bd80a6668915ee2202e90294c38813cdf6da3"
+    },
+    {
+      "path": "reports/baseline_tuning/tuning_trials_r3_20261120.csv",
+      "origin": "training_zip/reports",
+      "sha256": "35bec72a9c26aa4480451b5aaccbc1933941c8574e76c7709aae86593c859f1e"
+    },
+    {
+      "path": "reports/baseline_tuning/调参报告_年化收益_20261119.md",
+      "origin": "training_zip/reports",
+      "sha256": "badbe1514f6b2305f1a7213790cfd0597dae8e5b51d0d06a0d30fb35c3dd0710"
+    },
+    {
+      "path": "reports/baseline_tuning/调参报告_第三轮_20261120.md",
+      "origin": "training_zip/reports",
+      "sha256": "4ed97f600ccb19e1107440f8050f15bbf11af262f7f23f0f68e7fadbd637c9a4"
+    },
+    {
+      "path": "reports/baseline_tuning/调参报告_第二轮_20261119.md",
+      "origin": "training_zip/reports",
+      "sha256": "76434e31a50f2e188185e9dab0e334c30b31c63ff243ff307506f1efa0e73a6a"
+    },
+    {
+      "path": "outputs/preds/lightgbm_predictions.csv",
+      "origin": "training_zip/final_predictions",
+      "sha256": "7db74ce2a3369d114cc8ae6b686b18b810c7f7fdcec39bc9513ea38469dcc0d8"
+    },
+    {
+      "path": "outputs/preds/manifest.json",
+      "origin": "training_zip/final_predictions",
+      "sha256": "4b1336844fb97faa015cd805603e4d97308881c2102bee04a1a6b68c216e856e"
+    },
+    {
+      "path": "outputs/preds/patchtst_predictions.csv",
+      "origin": "training_zip/final_predictions",
+      "sha256": "ef86b5431319889a58a9e993a8fa9042bf268124986e104b61d2559a2fae2b6d"
+    },
+    {
+      "path": "outputs/preds/ridge_predictions.csv",
+      "origin": "training_zip/final_predictions",
+      "sha256": "cf4f657e5e974dcb572b57b711826ac41e22d4824cecabc418273fa4de3e4fe8"
+    },
+    {
+      "path": "outputs/preds/tqnet_predictions.csv",
+      "origin": "training_zip/final_predictions",
+      "sha256": "43543c9e5617bd6f17c96e5ddec7ca12b2eed6a12b6cbf015f5a8af874d3e925"
+    },
+    {
+      "path": "outputs/preds/交付说明.md",
+      "origin": "training_zip/final_predictions",
+      "sha256": "153c3c2279967a80315f3b9d4377974c1c0d875cbbf554c4684ea452a0017bd7"
+    },
+    {
+      "path": "outputs/figures/baseline_tuning_final.png",
+      "origin": "training_zip/figure",
+      "sha256": "61802015b9471a748ac592862309b433eaabe1dfaa47b0cceffd0646f5abf316"
+    },
+    {
+      "path": "docs/delivery_20261120/原交付说明.md",
+      "origin": "training_zip/readme",
+      "sha256": "6dea7644fe2b01c022f36bdc052cb58ff8546711f6cf5311ecc9aea084b684aa"
+    },
+    {
+      "path": "dataset/revised/audit/feature_correlation.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "ad8b66e6fa7d0a41dbb947080d3821e9db1ed3b4678c2d90f79558af4c0d0847"
+    },
+    {
+      "path": "dataset/revised/audit/split_summary_dual.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "ccedc0a0a325db5c7937da678cfc3dbf8be63aab12891cc42a2d05b7edae77d2"
+    },
+    {
+      "path": "dataset/revised/audit/train_val_drift.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "4bb0ad87197cb490599f88c2e9e4cdf10d746c33eefe9e96f82f687888f58511"
+    },
+    {
+      "path": "dataset/revised/audit/validation_comparison.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "7ea95014023114e8d5a1e67d263948c1e2547e450cae0da652b106cb4ac71814"
+    },
+    {
+      "path": "dataset/revised/audit/vif.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "a618a64e655f8c032173be93701285f9a14232950f3dced392365fed797f246a"
+    },
+    {
+      "path": "dataset/revised/history/features_history.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "e4954234806c160ae7b15089e1cbc0d6b4b80a24706efece87d3ad1c8ce31420"
+    },
+    {
+      "path": "dataset/revised/manifest.json",
+      "origin": "revised_dataset_zip",
+      "sha256": "479bea62b162afe491cdfaa9e6bcb2ffc03759ec593db22b275ad02bd8774f5c"
+    },
+    {
+      "path": "dataset/revised/preprocessing.json",
+      "origin": "revised_dataset_zip",
+      "sha256": "00e88089ea82ab890234b36b48043e98c370e5b603d82d93a936edb9142e8984"
+    },
+    {
+      "path": "dataset/revised/processed/test/X_test_lightgbm.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "2b55279245a5087b6338487d2d63c167048fcaf05253a8a7ce10c0d1bb194d08"
+    },
+    {
+      "path": "dataset/revised/processed/test/X_test_ridge.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "58858635241ec0ede1ff891d05a9657e5029b40fd7ea6af67a5f38b78b11d501"
+    },
+    {
+      "path": "dataset/revised/processed/train/X_train_lightgbm.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "856b56d57f99b67640576c30dc293c2fcdc392041e2cb6c21e5376f6a524dfbb"
+    },
+    {
+      "path": "dataset/revised/processed/train/X_train_ridge.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "1dccf1e78bf4c3a787e1f1349e5ca61a411b7847ff57b84a8b7dbefb9daaa687"
+    },
+    {
+      "path": "dataset/revised/processed/val/X_val_lightgbm.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "bdde2b12c7a5b77be1ff6a3e202936b61b2bdbdda7021ae4a991a813b234733a"
+    },
+    {
+      "path": "dataset/revised/processed/val/X_val_ridge.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "676229b53a827e6e78b999e8318d1d8428a2edb6703e02226c4311be405e0819"
+    },
+    {
+      "path": "dataset/revised/README.md",
+      "origin": "revised_dataset_zip",
+      "sha256": "b856a8f975d04e51d48ec921c18333cd5177c0dbb07c4bea8a10dfdfea5a6d77"
+    },
+    {
+      "path": "dataset/revised/split_summary.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "edc17d9e40fb6dc638154d048b1a732a5732a8d92c0eff8ba67aed2d0129303c"
+    },
+    {
+      "path": "dataset/revised/src/features.py",
+      "origin": "revised_dataset_zip",
+      "sha256": "78a4a074d229603d8e3242120e42b23a456c32e5e1552e3bd3ceb1ef06def211"
+    },
+    {
+      "path": "dataset/revised/src/modeling_data.py",
+      "origin": "revised_dataset_zip",
+      "sha256": "e292a6efb592d2622cbf0da51a7e85b3944ee7af6cd445a65712528f47ca1456"
+    },
+    {
+      "path": "dataset/revised/test/target_dates.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "dataset/revised/test/X_test.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "9f725c635998704ddaadb7e753d6a48b855c12b2c481a776d4e71239d1bc35db"
+    },
+    {
+      "path": "dataset/revised/train/recency_weights.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "dbf3effa005eab007847fbf29b3412781f5cfedd6ca5f6209d7b70bbdb38c57d"
+    },
+    {
+      "path": "dataset/revised/train/X_train.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "c88c55bd3d7d77e19a5497a883e377664e31fde1c11e6f39ed19f4bc6f1e0551"
+    },
+    {
+      "path": "dataset/revised/train/y_trade.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "b03450ca1bc88bf526cb6ed1c4a61d8a85e31b989490f0295b66f82f2e4d1b83"
+    },
+    {
+      "path": "dataset/revised/train/y_train.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "c497a2affb9fca11ba1af6dbdf421aef6e33724ac5315557b51ff29422238f3f"
+    },
+    {
+      "path": "dataset/revised/val/X_val.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "fe1247620ae8cf30aaa82fe1a2e2892f675a72a7ada7b5aff01be4f8b2e0ae87"
+    },
+    {
+      "path": "dataset/revised/val/y_trade.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "9257237f567118a77c446655ba00f2d4a9526fd74e5eb32841b0ea2985987777"
+    },
+    {
+      "path": "dataset/revised/val/y_val.csv",
+      "origin": "revised_dataset_zip",
+      "sha256": "ab06b9f51252d165cbec7102850ad607299f0020177989e8fa2003279bbba5ea"
+    },
+    {
+      "path": "data/第二阶段_统一建模数据_修订版.zip",
+      "origin": "revised_dataset_zip/original_archive",
+      "sha256": "bf1eaa61ec56b1c7a8a7a9747610ed639f938178ada2cd769dc23f8b46b26275"
+    },
+    {
+      "path": "data/clean_prices.csv",
+      "origin": "local_base_project/prices",
+      "sha256": "894531cd85d98f18d01b81a4beb85ddda2a10d0d854123bdb4b46151a23fafe7"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/close/lightgbm/model.txt",
+      "origin": "local_base_project/source_run",
+      "sha256": "361b07187d16a7fe08e56950ba0246667eb522137799c5de4551b827a29a3087"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/close/lightgbm/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "a24e4854f8165f3e697f6f7e64440ce65cf04eed7016c07ff9bf933b79fcbdc1"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/close/lightgbm/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "85955b655b4d4bfe022005a4776709c577c154b1f1beaa6ca8dbe7fa9cdcfe67"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/close/ridge/model.joblib",
+      "origin": "local_base_project/source_run",
+      "sha256": "83fdc860d2566c7d5399505a1a4dc006c2e37bc6a979a09419f0696bbaf2b6a6"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/close/ridge/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "4e7cd94cfd9d2b390e3c235ce996860855818ec7f9b4eb3f2f569ae1ccd91650"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/close/ridge/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "dcb82ffa7f8b8c9bd7598c9ae148436a5b1bfaf38b35955b3805dafee8ea31ae"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/run_config.json",
+      "origin": "local_base_project/source_run",
+      "sha256": "a47218c548b096dca679534fe56f85829f9bf348a2a04e1f38da586a5bf50171"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/test_target_dates.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/trade/lightgbm/model.txt",
+      "origin": "local_base_project/source_run",
+      "sha256": "f05d59c9d7c5c484c345c9f825631fa5605d3342ee96551ee5ce2f0dd794cbd0"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/trade/lightgbm/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "041522125f8fa5e7bdaf5c723be4866b8a3399c9d8e22271f532aa30a90bb487"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/trade/lightgbm/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "58de4a9a5e54c8c741927edae1d9c7ec3442016215d616f3be6e83bfa5bbdeca"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/trade/ridge/model.joblib",
+      "origin": "local_base_project/source_run",
+      "sha256": "80038235fd90ae69c225f48785a80b2ff55e47e6b72d2c6ce3f3c1232cbb8094"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/trade/ridge/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "660ac2c9db07e77ef8a1035d3d1ef8b872643c47dab0460610f997930a9eeed3"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/trade/ridge/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "9460b3a2f094c66b36ee5853bf651c1ba8df17a5e52f9b95d4c949be9942e2b8"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu/validation_metrics.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "2e447dcbad56831fbc8c98e0c75f807c3516d20381e17f897f22270702590b7b"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/cpu.log",
+      "origin": "local_base_project/source_run",
+      "sha256": "a4933eac5b781ef14d705a8bf6057d324426f36dc1b1fc9f3b54655d36096eaa"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/acf/acf.png",
+      "origin": "local_base_project/source_run",
+      "sha256": "58c6b0c73ba1a0711bc2248440c088ce5f5759f3266eed0bb4083357b408ec9a"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/acf/acf_values.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "04592fc10ac1aead43a82cbf350db8574b27b795fa70c77c854e4880fcf3164b"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/acf/cycle_candidates.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "67f99886a18eff35db342f91e454fd113f410e0086fb563551ebbceb24c0fe0a"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/acf/cycle_selection.json",
+      "origin": "local_base_project/source_run",
+      "sha256": "128548788934c60e0846587d69b0270113e7dab685b89271d374feb2b223df10"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/patchtst/model.pt",
+      "origin": "local_base_project/source_run",
+      "sha256": "1856dd384b8982e712c3d20c14b9610a3b7cb35564ae281edf1535baa811513b"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/patchtst/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "f397cac9b2f6b1ba35c97b435fd05e998b6efeea35f8344dc169e425da4f6d04"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/patchtst/training_history.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "2abf573b14c0c3a82cc72fa28a8eca9f8066ebbbb7c45c7b76006ebeb435c06b"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/patchtst/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "75d05d5076e528a82c308a2d62ae243812a907820d7dc6916ebbcae8b6ce5371"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/tqnet/model.pt",
+      "origin": "local_base_project/source_run",
+      "sha256": "1692aa9c580d64c48585ec94f9cf3f432e3c6c38538bf8a309143a4d47ca7f25"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/tqnet/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "8408ae3710fcaea0b9c876d2fee50e2db76753517c978647c1976e2eed6aab92"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/tqnet/training_history.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "01c5647941d9288584d31b9f58f353734d62c2c06bcc04e81902a906e344b8a6"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/close/tqnet/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "29484537a6d70ec76ea599eb945a9da425f7911617e4b2f37ccab94759f00737"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/run_config.json",
+      "origin": "local_base_project/source_run",
+      "sha256": "2c783c298a745399b694c54e46d3a8229fecf70207db27f70fe967a45493d76c"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/test_target_dates.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "4354417b64535fb6b671766ff6b1b17a4b72c8b3f3b8611f14e29703a6d1d07c"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/patchtst/model.pt",
+      "origin": "local_base_project/source_run",
+      "sha256": "2c6b412870cd85c6924a564459b1f6de73405df1ba0543eccd8d15335e8e8fbd"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/patchtst/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "605bc42e3deb78834eb97cdf459ce4cdb78a2e73558c15802dbe039b662bb43b"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/patchtst/training_history.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "472fe40eed891a290968b315b4cc336b3af4afa51fd18f24baeb54246b402ce7"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/patchtst/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "5b1ad6d743d52af19b4e0138e3098e3bcaca2b4274d9c1086ab00afc03591163"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/tqnet/model.pt",
+      "origin": "local_base_project/source_run",
+      "sha256": "8134b2ca4b6f5c3b36839a33aa4b5955e74290372bf3689393f2561aa838645f"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/tqnet/predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "7e89da804075b84cd5cbfad90bff7817530f4b267772f5618af9fe631bdff2c0"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/tqnet/training_history.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "c0c97ef70c81f4f9300bf0aa91f69f3649210aa8ddf8784149ca7b005d632885"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/trade/tqnet/validation_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "a2f18d233fa1bc46242cccf81522246082e6f0b98396c6a7b23742c6595d0f6d"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu/validation_metrics.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "bfb194b30057afc9e89eec46db678021d8b64e0e1907c01eac6ede4f78961d38"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/gpu.log",
+      "origin": "local_base_project/source_run",
+      "sha256": "03d574d1516f47f0cf0f2802fcbe8d7756966c98bf1e3d460b270f7ca69d34d1"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/handoff/lightgbm_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "eb60233b7f222b06ba234b0ec8e937ad9b84d76689886897c727b0be122215eb"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/handoff/manifest.json",
+      "origin": "local_base_project/source_run",
+      "sha256": "e6ecdbfe0766ef9fbf2ac9464f3abb570a5f7634e29af8f9a8cd48f07166623e"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/handoff/patchtst_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "c334d38256ceebe306a80abca9f041a57bfd05e7d1e5b4ea4535e00f092f21bb"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/handoff/ridge_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "7b14618592893bc4d58b488432c849851a1d56d033bf984a69c3369f4e2d4bf4"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/handoff/tqnet_predictions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "1c4a047355975c2a5396cdc1c8cf822fb149a21528084f7cae6374d1bea698a3"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/handoff/交付说明.md",
+      "origin": "local_base_project/source_run",
+      "sha256": "082c531284c9352a5f7e9cf86fd93c08a9ec1f6fd764ec5641831059e56f92aa"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/lightgbm_decisions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "4f9be91e09e4bf0ea79b0b2c662c11811ab6cacfdecc45253155b9a256f297ec"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/lightgbm_equity.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "63bdeb6081926009ce17b18f855ad7ca8f1891e76693194784cd701aac032d92"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/lightgbm_trades.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "8b2279f71c1fa93222b47104b8db22b898f502d67c87d9be1cef4bf745ea1413"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/patchtst_decisions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "30965456939ee51e55359db01a0f5596535fe0048bb2f0a55548a5714e29e707"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/patchtst_equity.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "df38fb35347f672599cb5263de300bea8b90c19cdbf194c98213aea3b77996f7"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/patchtst_trades.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "61f44cd6c5dccb8b242cee52f6655e64046232fa45a08db3bd20810969418585"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/ridge_decisions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "ad57cf451f33c9e809a589f0db39d7cddccef10ffb654adaf1ea4a4e49f1643a"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/ridge_equity.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "ac19ac1e7591ca21e5fe949c494684d028f46c33398f60f56eaa3e9b7726a178"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/ridge_trades.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "d59f6cb0ecc07aeb0349bf2f9eee962dbf3fe259491a310d8c32e1a800ffc74e"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/selected_config.json",
+      "origin": "local_base_project/source_run",
+      "sha256": "c201a0126e549941d303d72bf1c4356c55412d280cf7372617d843e207401a92"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/strategy_metrics.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "32baf2bda000fd802cbef72976a9b92182de5d761e764201c9e834f4264e83f3"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/tqnet_decisions.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "191d666f57bab90dd75e701f42668066778691aa366c44b587253cbe80c47510"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/tqnet_equity.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "c289ea13eb50f0e65196eedc5be7711f361a9c796f960cf52372ee98a27a2c54"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/research_strategy_backtest/tqnet_trades.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "127c3432479de68fbce14957104eb7c396696e936e186d0359ed37ee4e0dc1e6"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/test_metrics.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "4d37dbb8adb3da727004d65129c3f83a06c6ab20355ef5255b3b4c166c9180a9"
+    },
+    {
+      "path": "runs/20261119_165036_ed592b/validation_metrics.csv",
+      "origin": "local_base_project/source_run",
+      "sha256": "996601f0d8b7d0ddd1d1cbde518bad3f96f74679975fb0aed2bf3af10e847804"
+    },
+    {
+      "path": "outputs/metrics/test_metrics.csv",
+      "origin": "training_zip/final_summary",
+      "sha256": "16d2dc712862d9d0973651f804aa788222651b509c758a02cc2d94ed983e2aa2"
+    },
+    {
+      "path": "outputs/metrics/validation_metrics.csv",
+      "origin": "training_zip/final_summary",
+      "sha256": "5f1d9b593c02401d29a82a45c830df9aa3564bbc11fb749c5592d537862108a2"
+    },
+    {
+      "path": "outputs/metrics/final_selection.json",
+      "origin": "training_zip/final_summary",
+      "sha256": "a21abcea11e564c975e033c402da1d0cf3b191587608a21e097653874829bcdd"
+    },
+    {
+      "path": "outputs/metrics/strategy_metrics.csv",
+      "origin": "training_zip/final_summary",
+      "sha256": "9c7ced1e104f045165659d0144290da7ae25be4a7990a94baaaf03bf64d92025"
+    }
+  ]
+}

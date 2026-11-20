@@ -1,0 +1,9 @@
+# 模型额外依赖；不包含 PyTorch，复用与硬件兼容的现成 PyTorch/CUDA。
+# 归档 CPU 推理：NumPy 2.3.4, pandas 2.2.3, sklearn 1.6.1, LightGBM 4.6.0。
+# RTX 5060 推理：torch 2.10.0+cu128, NumPy 2.2.6, pandas 2.3.3。
+numpy>=2.2,<3
+pandas>=2.2,<3
+scikit-learn==1.6.1
+lightgbm==4.6.0
+joblib>=1.4,<2
+matplotlib>=3.9,<4

@@ -1,0 +1,49 @@
+{
+  "round": 2,
+  "round1_run": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_201122_annualret_770f6c",
+  "objective": "validation annualized return under frozen strategy (fees included)",
+  "selection_rule": "prefer candidates with worst-half total return >= -5% and max drawdown <= 25%; rank by validation annual return, then Sharpe, then smaller drawdown; a 3-seed average replaces its single-seed winner when it scores higher on validation",
+  "round1_problems": [
+    "single seed 42: sequence results carry seed luck, never re-checked",
+    "one-at-a-time single round: no combinations, no refinement near winners",
+    "validation is a single rally regime: PatchTST 64-day validation edge did not transfer to test",
+    "PatchTST window not fully explored: 336 and 64 tested, 128 never tried",
+    "no ensembling tried in round 1",
+    "early stopping and selection share the validation period (disclosed)"
+  ],
+  "ridge_r2": [
+    "alpha_7500",
+    "alpha_15000",
+    "alpha_20000"
+  ],
+  "lightgbm_r2": [
+    "minchild60",
+    "minchild80",
+    "minchild40_depth3",
+    "minchild40_lr003",
+    "minchild40_col07",
+    "minchild40_lambda05"
+  ],
+  "tqnet_r2": [
+    "lr7e4",
+    "lr1e3",
+    "lr5e4_wd1e3",
+    "lr5e4_huberdir",
+    "lr5e4_drop02",
+    "lb128_lr5e4"
+  ],
+  "patchtst_r2": [
+    "64_lr7e4",
+    "64_lr1e3",
+    "64_lr5e4_drop02",
+    "64_lr5e4_layers3",
+    "128_lr5e4",
+    "128_lr3e4"
+  ],
+  "ensembles": "per model, top-2 and top-3 round-1 candidates by validation annual return, deduplicated",
+  "multiseed": "seeds 43, 44 for round-1 winners and round-2 winners (sequence + lightgbm)",
+  "test_used_for_selection": false,
+  "seed": 42,
+  "device": "cpu",
+  "cpu_threads": 2
+}

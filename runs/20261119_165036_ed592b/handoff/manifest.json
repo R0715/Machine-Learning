@@ -1,0 +1,27 @@
+{
+  "source_run": "D:\\机器学习\\四基准模型\\runs\\20261119_165036_ed592b",
+  "dataset_sha256": "bf1eaa61ec56b1c7a8a7a9747610ed639f938178ada2cd769dc23f8b46b26275",
+  "prices_source": "D:\\机器学习\\四基准模型\\data\\clean_prices.csv",
+  "prices_sha256": "894531cd85d98f18d01b81a4beb85ddda2a10d0d854123bdb4b46151a23fafe7",
+  "train_asof_date": "2025-10-10",
+  "train_asof_reason": "验证集参与模型选择和早停，验证标签可用截至 2025-10-10 收盘。",
+  "last_trade_target_date": null,
+  "last_trade_target_note": "2026-10-22 信号的 t+2 超出本包行情截止日，交易收益结束日期留空。",
+  "source_models_sha256": {
+    "close/ridge": "83fdc860d2566c7d5399505a1a4dc006c2e37bc6a979a09419f0696bbaf2b6a6",
+    "trade/ridge": "80038235fd90ae69c225f48785a80b2ff55e47e6b72d2c6ce3f3c1232cbb8094",
+    "close/lightgbm": "361b07187d16a7fe08e56950ba0246667eb522137799c5de4551b827a29a3087",
+    "trade/lightgbm": "f05d59c9d7c5c484c345c9f825631fa5605d3342ee96551ee5ce2f0dd794cbd0",
+    "close/tqnet": "1692aa9c580d64c48585ec94f9cf3f432e3c6c38538bf8a309143a4d47ca7f25",
+    "trade/tqnet": "8134b2ca4b6f5c3b36839a33aa4b5955e74290372bf3689393f2561aa838645f",
+    "close/patchtst": "1856dd384b8982e712c3d20c14b9610a3b7cb35564ae281edf1535baa811513b",
+    "trade/patchtst": "2c6b412870cd85c6924a564459b1f6de73405df1ba0543eccd8d15335e8e8fbd"
+  },
+  "files_sha256": {
+    "ridge_predictions.csv": "7b14618592893bc4d58b488432c849851a1d56d033bf984a69c3369f4e2d4bf4",
+    "lightgbm_predictions.csv": "eb60233b7f222b06ba234b0ec8e937ad9b84d76689886897c727b0be122215eb",
+    "tqnet_predictions.csv": "1c4a047355975c2a5396cdc1c8cf822fb149a21528084f7cae6374d1bea698a3",
+    "patchtst_predictions.csv": "c334d38256ceebe306a80abca9f041a57bfd05e7d1e5b4ea4535e00f092f21bb",
+    "交付说明.md": "082c531284c9352a5f7e9cf86fd93c08a9ec1f6fd764ec5641831059e56f92aa"
+  }
+}

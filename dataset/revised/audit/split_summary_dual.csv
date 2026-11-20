@@ -1,0 +1,4 @@
+﻿split,signal_count,signal_start,signal_end,price_labels_in_package,trade_labels_in_package
+train,3465,2010-07-02,2024-10-09,3465,3464
+val,242,2024-10-11,2025-10-09,242,241
+test,251,2025-10-10,2026-10-22,0,0

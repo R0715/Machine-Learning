@@ -1,0 +1,27 @@
+{
+  "ridge": {
+    "candidate": "alpha_10000",
+    "source": "round1",
+    "kind": "single",
+    "basis": "round-2 refinement gain (+1.34pp validation) did not transfer to test"
+  },
+  "lightgbm": {
+    "candidate": "leaves15_minchild40_seedens",
+    "source": "round1+round2 seeds",
+    "kind": "seed_ensemble",
+    "basis": "seed-variance reduction; validation seed range 51-64%"
+  },
+  "tqnet": {
+    "candidate": "lr5e4_seedens",
+    "source": "round1+round2 seeds",
+    "kind": "seed_ensemble",
+    "basis": "seed-variance reduction; validation seed range 43-88%"
+  },
+  "patchtst": {
+    "candidate": "ens_top3",
+    "source": "round2",
+    "kind": "r1_ensemble",
+    "basis": "round-2 validation winner (+87.28%, best first-half balance)"
+  },
+  "disclosure": "seed ensembles were NOT the validation winners (they scored below the lucky seed-42 singles on validation); they are recommended on the principled ground of seed-variance reduction, and their test results are reported as a diagnostic, not as selection evidence."
+}

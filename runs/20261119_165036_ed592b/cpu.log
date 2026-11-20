@@ -1,0 +1,7 @@
+[close] train=3130, val=242, PatchTST 窗口=336, TQNet 窗口=64
+  ridge: RMSE=0.019508, DA=50.83%, 7.06s
+  lightgbm: RMSE=0.019510, DA=53.31%, 5.81s
+[trade] train=3129, val=241, PatchTST 窗口=336, TQNet 窗口=64
+  ridge: RMSE=0.020191, DA=50.62%, 0.01s
+  lightgbm: RMSE=0.019946, DA=51.87%, 0.13s
+输出目录 D:\机器学习\四基准模型\runs\20261119_165036_ed592b\cpu

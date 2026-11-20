@@ -7,3 +7,8 @@ venv/
 .env
 .DS_Store
 Thumbs.db
+
+# 本地复现与环境文件；归档 runs/、模型权重、预测仍保留。
+.pytest_cache/
+.ipynb_checkpoints/
+.env.*

@@ -1,0 +1,31 @@
+GPU NVIDIA GeForce RTX 5060 Laptop GPU | PyTorch 2.10.0+cu128 | CUDA 12.8
+训练集自相关分析确定 TQNet 周期 W=1
+[close] train=3130, val=242, PatchTST 窗口=336, TQNet 窗口=64
+  tqnet optimizer=Adam max_epochs=30 lookback=64 cycle=1
+  tqnet epoch=01 train_mse_scaled=1.051237 val_rmse=0.019426
+  tqnet epoch=05 train_mse_scaled=1.000105 val_rmse=0.019366
+  tqnet epoch=10 train_mse_scaled=0.990614 val_rmse=0.019317
+  早停，最佳 epoch=9
+  tqnet completed_epochs=14 best_epoch=9
+  tqnet: RMSE=0.019311, DA=58.68%, 15.86s
+  patchtst optimizer=AdamW max_epochs=20 lookback=336 encoder_layers=3
+  patchtst epoch=01 train_mse_scaled=1.061832 val_rmse=0.019793
+  patchtst epoch=05 train_mse_scaled=0.927594 val_rmse=0.019910
+  早停，最佳 epoch=1
+  patchtst completed_epochs=6 best_epoch=1
+  patchtst: RMSE=0.019793, DA=49.17%, 67.07s
+[trade] train=3129, val=241, PatchTST 窗口=336, TQNet 窗口=64
+  tqnet optimizer=Adam max_epochs=30 lookback=64 cycle=1
+  tqnet epoch=01 train_mse_scaled=1.051593 val_rmse=0.020249
+  tqnet epoch=05 train_mse_scaled=1.000511 val_rmse=0.020204
+  tqnet epoch=10 train_mse_scaled=0.994297 val_rmse=0.020218
+  早停，最佳 epoch=6
+  tqnet completed_epochs=11 best_epoch=6
+  tqnet: RMSE=0.020089, DA=58.92%, 4.69s
+  patchtst optimizer=AdamW max_epochs=20 lookback=336 encoder_layers=3
+  patchtst epoch=01 train_mse_scaled=1.054863 val_rmse=0.020560
+  patchtst epoch=05 train_mse_scaled=0.928364 val_rmse=0.020817
+  早停，最佳 epoch=1
+  patchtst completed_epochs=6 best_epoch=1
+  patchtst: RMSE=0.020560, DA=51.87%, 68.68s
+输出目录 D:\机器学习\四基准模型\runs\20261119_165036_ed592b\gpu

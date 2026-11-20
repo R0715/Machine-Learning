@@ -1,0 +1,27 @@
+{
+  "source_run": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_233827_annualret_final_cd62b2",
+  "dataset_sha256": "bf1eaa61ec56b1c7a8a7a9747610ed639f938178ada2cd769dc23f8b46b26275",
+  "prices_source": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/data/clean_prices.csv",
+  "prices_sha256": "894531cd85d98f18d01b81a4beb85ddda2a10d0d854123bdb4b46151a23fafe7",
+  "train_asof_date": "2025-10-10",
+  "train_asof_reason": "验证集参与模型选择和早停，验证标签可用截至 2025-10-10 收盘。",
+  "last_trade_target_date": null,
+  "last_trade_target_note": "2026-10-22 信号的 t+2 超出本包行情截止日，交易收益结束日期留空。",
+  "source_models_sha256": {
+    "close/ridge": "83fdc860d2566c7d5399505a1a4dc006c2e37bc6a979a09419f0696bbaf2b6a6",
+    "trade/ridge": "1fb841edb16854f8796b4f904ba113f322126584adc99e21037b8c5d0cfdc74a",
+    "close/lightgbm": "361b07187d16a7fe08e56950ba0246667eb522137799c5de4551b827a29a3087",
+    "trade/lightgbm": "3845fae0f36ff5f3dc7e479a3446d5281c132f8c759ce0585404bd8f7034aa10",
+    "close/tqnet": "1692aa9c580d64c48585ec94f9cf3f432e3c6c38538bf8a309143a4d47ca7f25",
+    "trade/tqnet": "77bdbf3569f4081b346e8c41e6d485794fc77267f53b544492fd4f168cb948c0",
+    "close/patchtst": "1856dd384b8982e712c3d20c14b9610a3b7cb35564ae281edf1535baa811513b",
+    "trade/patchtst": "a2413f2bb7cf4fdb17156efe6f97aeceac13eb4b78123795722c03ff1f601d57"
+  },
+  "files_sha256": {
+    "ridge_predictions.csv": "cf4f657e5e974dcb572b57b711826ac41e22d4824cecabc418273fa4de3e4fe8",
+    "lightgbm_predictions.csv": "7db74ce2a3369d114cc8ae6b686b18b810c7f7fdcec39bc9513ea38469dcc0d8",
+    "tqnet_predictions.csv": "43543c9e5617bd6f17c96e5ddec7ca12b2eed6a12b6cbf015f5a8af874d3e925",
+    "patchtst_predictions.csv": "ef86b5431319889a58a9e993a8fa9042bf268124986e104b61d2559a2fae2b6d",
+    "交付说明.md": "153c3c2279967a80315f3b9d4377974c1c0d875cbbf554c4684ea452a0017bd7"
+  }
+}

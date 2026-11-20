@@ -1,0 +1,38 @@
+{
+  "config": {
+    "risk_aversion": 3.0,
+    "risk_window": 60,
+    "cost_aversion": 1.0,
+    "drawdown_stop": 0.1,
+    "cooldown_sessions": 5
+  },
+  "selection_mode": "reuse_frozen_config",
+  "frozen_config_source": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/config/strategy_frozen.json",
+  "frozen_config_sha256": "e75c757284877ab0a52a4a6e6147915a515f7fed43cd75f863fc4337dab7ca23",
+  "source_selection_record": {
+    "config": {
+      "risk_aversion": 3.0,
+      "risk_window": 60,
+      "cost_aversion": 1.0,
+      "drawdown_stop": 0.1,
+      "cooldown_sessions": 5
+    },
+    "criterion": "mean validation Sharpe across four models",
+    "validation_start": "2024-10-11",
+    "validation_end": "2025-10-10",
+    "missing_final_validation_signal": "hold existing units when no new prediction is available",
+    "validation_predictions_sha256": {
+      "ridge": "8d0677ed1c901d0508096f1a9f36ccb1ed8d026dcd6efe117d4d6796a07a7408",
+      "lightgbm": "084ab71a72f3523d13638765f3cfd07cd6f7f3c3853b16f7c7bf13bbeb02565c",
+      "tqnet": "874e0a743320a9802367f15631281d2cc9e1c64c31f8c0f5e0e1d4b6c17d3a35",
+      "patchtst": "11e8b84e039d3552ecf45148859348165593e3cd50482d0220e053831da7e659"
+    },
+    "sources": [
+      "https://web.stanford.edu/~boyd/papers/cvx_portfolio.html",
+      "https://www.cvxportfolio.com/en/stable/examples/paper_examples/single_period_opt.html"
+    ],
+    "project_adaptations": "0/25/50/75/100% target weights plus current hold, minimum commission, 10% drawdown stop and 5-signal cooldown",
+    "test_status": "the same test period was inspected in preceding experiments; this is a retrospective extension"
+  },
+  "test_status": "the same test period was inspected in preceding experiments; this is a retrospective extension"
+}

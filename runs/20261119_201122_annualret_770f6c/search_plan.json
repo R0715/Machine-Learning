@@ -1,0 +1,71 @@
+{
+  "objective": "validation annualized return under frozen strategy (fees included)",
+  "source_run": "/home/hatch/workspace/goals/chinext-index-enhancement-project/hidden_files/upload_20261119/project/runs/20261119_165036_ed592b",
+  "dataset_sha256": "bf1eaa61ec56b1c7a8a7a9747610ed639f938178ada2cd769dc23f8b46b26275",
+  "frozen_strategy_sha256": "e75c757284877ab0a52a4a6e6147915a515f7fed43cd75f863fc4337dab7ca23",
+  "frozen_strategy": {
+    "risk_aversion": 3.0,
+    "risk_window": 60,
+    "cost_aversion": 1.0,
+    "drawdown_stop": 0.1,
+    "cooldown_sessions": 5
+  },
+  "training_rows": 3129,
+  "training_end": "2024-10-08",
+  "validation_dates": [
+    "2024-10-11",
+    "2025-09-30"
+  ],
+  "validation_rows": 241,
+  "early_stopping": "full validation RMSE, patience 5 (same period also used for selection)",
+  "selection_rule": "prefer candidates with worst-half total return >= -5% and max drawdown <= 25%; rank by validation annual return, then Sharpe, then smaller drawdown",
+  "test_used_for_selection": false,
+  "test_already_seen_in_prior_experiments": true,
+  "seed": 42,
+  "device": "cpu",
+  "cpu_threads": 2,
+  "patchtst_candidates": [
+    "ref336",
+    "336_lr1e4",
+    "336_lr1e4_drop02",
+    "ref64",
+    "64_lr1e4",
+    "64_lr5e4",
+    "64_drop02"
+  ],
+  "tqnet_candidates": [
+    "ref",
+    "cycle5",
+    "cycle20",
+    "lr1e4",
+    "lr5e4",
+    "drop02",
+    "cycle5_lr5e4",
+    "huber_dir",
+    "wd1e3",
+    "lb32_cycle5"
+  ],
+  "lightgbm_candidates": [
+    "ref",
+    "leaves15",
+    "leaves63",
+    "lr003",
+    "lr01",
+    "minchild10",
+    "minchild40",
+    "lambda0",
+    "lambda5",
+    "colsample07",
+    "colsample10",
+    "leaves63_lr003",
+    "leaves15_minchild40"
+  ],
+  "ridge_candidates": [
+    "alpha_100",
+    "alpha_500",
+    "alpha_1000",
+    "alpha_5000",
+    "alpha_10000",
+    "alpha_50000"
+  ]
+}

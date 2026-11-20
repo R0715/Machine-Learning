@@ -1,0 +1,19 @@
+{
+  "kind": "seed_ensemble",
+  "candidate": "leaves15_minchild40",
+  "members": [
+    {
+      "file": "member_0.txt",
+      "source_folder": "runs/20261119_201122_annualret_770f6c/search/lightgbm/leaves15_minchild40"
+    },
+    {
+      "file": "member_1.txt",
+      "source_folder": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/leaves15_minchild40_s43"
+    },
+    {
+      "file": "member_2.txt",
+      "source_folder": "runs/20261119_231541_annualret2_5619ec/search_r2/lightgbm/leaves15_minchild40_s44"
+    }
+  ],
+  "canonical_model_file": "model.txt 为 member_0（种子 42）的副本，仅供清单哈希使用"
+}

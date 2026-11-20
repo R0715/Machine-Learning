@@ -1,0 +1,18 @@
+{
+  "kind": "r1_ensemble",
+  "candidate": "ens_top3",
+  "members": [
+    {
+      "file": "member_0.pt",
+      "source_folder": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr5e4"
+    },
+    {
+      "file": "member_1.pt",
+      "source_folder": "runs/20261119_201122_annualret_770f6c/search/patchtst/64_lr1e4"
+    },
+    {
+      "file": "member_2.pt",
+      "source_folder": "runs/20261119_201122_annualret_770f6c/search/patchtst/ref64"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Data archives, model provenance, and prediction manifests verify exact bytes.
+# Preserve the reviewed file bytes on Windows and Linux; do not convert EOLs.
+* -text
